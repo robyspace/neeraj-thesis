@@ -1,0 +1,255 @@
+================================================================================
+ECMR-CloudSim COMPLETE INTEGRATION
+================================================================================
+
+[1/6] Connecting to Java Gateway at localhost:25333...
+      Connected to Java Gateway successfully
+
+[2/6] Initializing CloudSim simulation...
+      CloudSim initialized
+
+[3/6] Creating datacenters (CloudSim + Enhanced ECMR models)...
+      Created: DC_IT (Milan Datacenter)
+      Created: DC_SE (Stockholm Datacenter)
+      Created: DC_ES (Madrid Datacenter)
+      Created: DC_FR (Paris Datacenter)
+      Created: DC_DE (Frankfurt Datacenter)
+
+[4/6] Loading synchronized dataset with ALL columns...
+      Loaded 8784 hours of data
+      Total columns: 42
+
+      CSV Columns Structure:
+        - Temporal: timestamp, hour_of_day, day_of_week, is_weekend (4)
+        - Workload: vm_arrivals, total_cpus_requested, total_ram_mb_requested (3)
+        - Renewable breakdown: {country}_hydro/solar/wind (15)
+        - Aggregated renewable: {country}_total_renewable_mw (5)
+        - Carbon: {country}_carbon_intensity (5)
+        - Renewable %: {country}_renewable_pct (5)
+        - Classification: {country}_datacenter_type (5)
+        Total: 42 columns, ALL will be used
+
+[5/6] Running complete ECMR + CloudSim simulation...
+
+  ECMR Configuration:
+    Weights: w1(energy)=0.4, w2(carbon)=0.4, w3(latency)=0.2
+    Latency threshold: 175.0ms
+
+  Processing VMs with complete ECMR scheduling...
+
+  📊 DATA VALIDATION SAMPLE (Hour 0):
+  ----------------------------------------------------------------------------
+  Workload from CSV:
+    vm_arrivals:           0
+    total_cpus_requested:  0
+    total_ram_mb_requested: 0
+
+  DC_IT (Milan Datacenter) from CSV:
+    italy_hydro:              2861.0 MW
+    italy_solar:              0.0 MW
+    italy_wind:               3927.0 MW
+    italy_total_renewable_mw: 6788.0 MW
+    italy_carbon_intensity:   231.98 gCO2/kWh
+    italy_renewable_pct:      43.1%
+    italy_datacenter_type:    DB
+
+  DC_IT State After Loading:
+    hydro_mw:              2861.0 MW  ✓
+    solar_mw:              0.0 MW  ✓
+    wind_mw:               3927.0 MW  ✓
+    renewable_generation:  6788.0 MW  ✓
+    carbon_intensity:      231.98 gCO2/kWh  ✓
+    renewable_pct:         43.1%  ✓
+    datacenter_type:       DB  ✓
+  ----------------------------------------------------------------------------
+
+  Hour 1 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_DE [DG]: 10 VMs | Renewable: 72.6% | Carbon: 163 gCO2/kWh
+
+    Sample Decision (VM 0):
+      DC_DE  [DG]: Score=0.1798 | Lat= 59.8ms | C=163g | R=72.6% | ✓ SELECTED
+      DC_SE  [DG]: Score=0.2073 | Lat=124.2ms | C= 35g | R=65.4% | ✗ not best
+      DC_ES  [DG]: Score=N/A     | Lat=181.0ms | C= 69g | R=51.4% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.2795 | Lat= 62.5ms | C=243g | R=40.2% | ✗ not best
+      DC_FR  [DB]: Score=0.2379 | Lat=103.3ms | C= 14g | R=35.5% | ✗ not best
+    Processed 20 VMs...
+
+  Hour 2 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_ES [DG]: 10 VMs | Renewable: 51.4% | Carbon: 70 gCO2/kWh
+
+    Sample Decision (VM 10):
+      DC_ES  [DG]: Score=0.1255 | Lat=  0.0ms | C= 70g | R=51.4% | ✓ SELECTED
+      DC_DE  [DG]: Score=0.2664 | Lat=144.6ms | C=164g | R=71.9% | ✗ not best
+      DC_SE  [DG]: Score=N/A     | Lat=259.3ms | C= 36g | R=64.4% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.3269 | Lat=118.8ms | C=231g | R=42.3% | ✗ not best
+      DC_FR  [DB]: Score=0.2394 | Lat=105.3ms | C= 13g | R=35.7% | ✗ not best
+
+  Hour 3 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_DE [DG]: 10 VMs | Renewable: 72.1% | Carbon: 165 gCO2/kWh
+
+    Sample Decision (VM 20):
+      DC_DE  [DG]: Score=0.1817 | Lat= 59.8ms | C=165g | R=72.1% | ✓ SELECTED
+      DC_SE  [DG]: Score=0.2106 | Lat=124.2ms | C= 36g | R=64.1% | ✗ not best
+      DC_ES  [DG]: Score=N/A     | Lat=181.0ms | C= 74g | R=50.6% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.2744 | Lat= 62.5ms | C=235g | R=41.2% | ✗ not best
+      DC_FR  [DB]: Score=0.2377 | Lat=103.3ms | C= 14g | R=35.7% | ✗ not best
+    Processed 40 VMs...
+
+  Hour 4 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_DE [DG]: 10 VMs | Renewable: 73.1% | Carbon: 161 gCO2/kWh
+
+    Sample Decision (VM 30):
+      DC_DE  [DG]: Score=0.1547 | Lat= 36.3ms | C=161g | R=73.1% | ✓ SELECTED
+      DC_SE  [DG]: Score=0.1990 | Lat=112.5ms | C= 37g | R=64.2% | ✗ not best
+      DC_ES  [DG]: Score=0.2744 | Lat=148.1ms | C= 71g | R=51.1% | ✗ not best
+      DC_IT  [DB]: Score=0.3038 | Lat= 82.9ms | C=246g | R=38.8% | ✗ not best
+      DC_FR  [DB]: Score=0.1758 | Lat= 43.0ms | C= 14g | R=36.6% | ✗ not best
+
+  Hour 5 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_ES [DG]: 10 VMs | Renewable: 50.5% | Carbon: 71 gCO2/kWh
+
+    Sample Decision (VM 40):
+      DC_ES  [DG]: Score=0.1273 | Lat=  0.0ms | C= 71g | R=50.5% | ✓ SELECTED
+      DC_DE  [DG]: Score=0.2579 | Lat=144.6ms | C=154g | R=74.2% | ✗ not best
+      DC_SE  [DG]: Score=N/A     | Lat=259.3ms | C= 33g | R=65.1% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.3412 | Lat=118.8ms | C=246g | R=38.1% | ✗ not best
+      DC_FR  [DB]: Score=0.2378 | Lat=105.3ms | C= 15g | R=36.7% | ✗ not best
+    Processed 60 VMs...
+
+  Hour 6 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  0 VMs (0.0%)
+    DB (Brown):  10 VMs (100.0%)
+
+    DC_FR [DB]: 10 VMs | Renewable: 36.5% | Carbon: 15 gCO2/kWh
+
+    Sample Decision (VM 50):
+      DC_DE  [DG]: Score=0.1568 | Lat= 47.8ms | C=148g | R=75.2% | ✗ not best
+      DC_SE  [DG]: Score=0.2266 | Lat=154.3ms | C= 17g | R=67.3% | ✗ not best
+      DC_IT  [DB]: Score=0.2941 | Lat= 64.0ms | C=261g | R=37.3% | ✗ not best
+      DC_ES  [DB]: Score=0.2358 | Lat=105.3ms | C= 74g | R=49.7% | ✗ not best
+      DC_FR  [DB]: Score=0.1331 | Lat=  0.0ms | C= 15g | R=36.5% | ✓ SELECTED
+
+  Hour 7 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_SE [DG]: 10 VMs | Renewable: 70.6% | Carbon: 12 gCO2/kWh
+
+    Sample Decision (VM 60):
+      DC_DE  [DG]: Score=0.1487 | Lat= 42.4ms | C=142g | R=75.4% | ✗ not best
+      DC_SE  [DG]: Score=0.1446 | Lat= 81.0ms | C= 12g | R=70.6% | ✓ SELECTED
+      DC_ES  [DG]: Score=N/A     | Lat=186.9ms | C= 73g | R=50.8% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.3308 | Lat= 84.2ms | C=280g | R=32.9% | ✗ not best
+      DC_FR  [DB]: Score=0.2239 | Lat= 87.8ms | C= 14g | R=34.7% | ✗ not best
+    Processed 80 VMs...
+
+  Hour 8 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_SE [DG]: 10 VMs | Renewable: 73.0% | Carbon: 8 gCO2/kWh
+
+    Sample Decision (VM 70):
+      DC_SE  [DG]: Score=0.0576 | Lat=  0.0ms | C=  8g | R=73.0% | ✓ SELECTED
+      DC_DE  [DG]: Score=0.2252 | Lat=118.7ms | C=143g | R=75.4% | ✗ not best
+      DC_ES  [DG]: Score=N/A     | Lat=259.3ms | C= 72g | R=52.5% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.4049 | Lat=165.2ms | C=273g | R=34.7% | ✗ not best
+      DC_FR  [DB]: Score=0.2913 | Lat=154.3ms | C= 13g | R=34.2% | ✗ not best
+
+  Hour 9 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_DE [DG]: 10 VMs | Renewable: 75.2% | Carbon: 148 gCO2/kWh
+
+    Sample Decision (VM 80):
+      DC_DE  [DG]: Score=0.1397 | Lat= 30.4ms | C=148g | R=75.2% | ✓ SELECTED
+      DC_ES  [DG]: Score=0.2393 | Lat=124.7ms | C= 67g | R=56.1% | ✗ not best
+      DC_SE  [DG]: Score=0.2023 | Lat=146.8ms | C=  7g | R=73.7% | ✗ not best
+      DC_IT  [DB]: Score=0.2461 | Lat= 21.8ms | C=258g | R=39.5% | ✗ not best
+      DC_FR  [DB]: Score=0.1829 | Lat= 48.8ms | C= 13g | R=35.7% | ✗ not best
+    Processed 100 VMs...
+
+  Hour 10 Placement Summary:
+  ----------------------------------------------------------------------------
+    DG (Green):  10 VMs (100.0%)
+    DB (Brown):  0 VMs (0.0%)
+
+    DC_SE [DG]: 10 VMs | Renewable: 73.6% | Carbon: 6 gCO2/kWh
+
+    Sample Decision (VM 90):
+      DC_DE  [DG]: Score=0.1565 | Lat= 42.4ms | C=159g | R=74.8% | ✗ not best
+      DC_SE  [DG]: Score=0.1365 | Lat= 81.0ms | C=  6g | R=73.6% | ✓ SELECTED
+      DC_ES  [DG]: Score=N/A     | Lat=186.9ms | C= 61g | R=62.0% | ✗ latency>175.0ms
+      DC_IT  [DB]: Score=0.2983 | Lat= 84.2ms | C=247g | R=42.5% | ✗ not best
+      DC_FR  [DB]: Score=0.2194 | Lat= 87.8ms | C= 14g | R=37.0% | ✗ not best
+  Total VMs processed: 100
+  Total hours simulated: 10
+
+  📊 WORKLOAD GENERATION VALIDATION (Sample Hours):
+  ----------------------------------------------------------------------------
+  Hour 0:
+    CSV Data: 119 VMs, 355 CPUs, 220976 GB RAM
+    Generated: 10 VMs, 25 CPUs, 640 GB RAM
+    Avg per VM - CSV: 3.0 CPUs, 1856.9 GB | Generated: 2.5 CPUs, 64.0 GB ✓
+  Hour 1:
+    CSV Data: 92 VMs, 428 CPUs, 138336 GB RAM
+    Generated: 10 VMs, 43 CPUs, 640 GB RAM
+    Avg per VM - CSV: 4.7 CPUs, 1503.7 GB | Generated: 4.3 CPUs, 64.0 GB ✓
+  Hour 2:
+    CSV Data: 69 VMs, 338 CPUs, 118336 GB RAM
+    Generated: 10 VMs, 46 CPUs, 640 GB RAM
+    Avg per VM - CSV: 4.9 CPUs, 1715.0 GB | Generated: 4.6 CPUs, 64.0 GB ✓
+  ----------------------------------------------------------------------------
+
+  Running CloudSim simulation...
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/Users/robyspace/Documents/cloudsim-baseline/venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1224, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/robyspace/Documents/cloudsim-baseline/venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/Users/robyspace/Documents/cloudsim-baseline/venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1228, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+✗ Error: An error occurred while calling t.runSimulation
+Traceback (most recent call last):
+  File "/Users/robyspace/Documents/cloudsim-baseline/src/main/python/ecmr_cloudsim_complete.py", line 1317, in main
+    placements = integration.run_complete_simulation(
+  File "/Users/robyspace/Documents/cloudsim-baseline/src/main/python/ecmr_cloudsim_complete.py", line 1050, in run_complete_simulation
+    self.java_gateway.runSimulation()
+  File "/Users/robyspace/Documents/cloudsim-baseline/venv/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/Users/robyspace/Documents/cloudsim-baseline/venv/lib/python3.10/site-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling t.runSimulation

@@ -1,0 +1,503 @@
+[main] INFO com.ecmr.baseline.Py4JGateway - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGateway - ECMR Baseline - Py4J Gateway Server
+[main] INFO com.ecmr.baseline.Py4JGateway - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGateway - Py4J Gateway Server started on port 25333
+[main] INFO com.ecmr.baseline.Py4JGateway - Python can now connect using: gateway = JavaGateway()
+[main] INFO com.ecmr.baseline.Py4JGateway - 
+Gateway is running. Python scripts can now connect.
+[main] INFO com.ecmr.baseline.Py4JGateway - Press Ctrl+C to stop the gateway.
+
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Initializing CloudSim simulation with config: {}
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Initializing CloudSim Plus simulation
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - CloudSim initialized with ECMR-aware broker
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_IT
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_IT with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_IT created with ID: 2
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_SE with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_SE created with ID: 3
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_ES
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_ES with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_ES created with ID: 4
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_FR
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_FR with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_FR created with ID: 5
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_DE with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_DE created with ID: 6
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Starting CloudSim simulation...
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Starting CloudSim simulation with 5 datacenters and 20 VMs
+[Thread-2] INFO CloudSim - 
+================== Starting CloudSim Plus 8.5.1 ==================
+
+[Thread-2] INFO DatacenterBroker - Broker 1 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 2 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 3 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 4 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 5 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 6 is starting...
+[Thread-2] INFO CloudSim - Entities started.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: List of 5 datacenters(s) received.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 0.00: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 3
+[Thread-2] WARN VmAllocationPolicy - 0.10: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.20: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 4
+[Thread-2] WARN VmAllocationPolicy - 0.20: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.30: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 5
+[Thread-2] WARN VmAllocationPolicy - 0.30: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 5
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.40: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 6
+[Thread-2] WARN VmAllocationPolicy - 0.40: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 6
+[Thread-2] ERROR DatacenterBroker - 0.50: EcmrDatacenterBroker1: 20 of the requested 20 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 5.50: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 5.50: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] ERROR DatacenterBroker - 5.60: EcmrDatacenterBroker1: 20 of the requested 20 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 10.60: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 10.60: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] ERROR DatacenterBroker - 10.70: EcmrDatacenterBroker1: 20 of the requested 20 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 15.70: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 15.70: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] ERROR DatacenterBroker - 15.80: EcmrDatacenterBroker1: 20 of the requested 20 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 20.80: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 20.80: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] ERROR DatacenterBroker - 20.90: EcmrDatacenterBroker1: 20 of the requested 20 VMs couldn't be created because suitable Hosts weren't found in any available Datacenter.
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_SE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 2
+[Thread-2] INFO DatacenterBroker - 25.90: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 0 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 1 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 2 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 3 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 4 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 5 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 6 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 7 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 8 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 9 (DC_SE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 10 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 11 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 12 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 13 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 14 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 15 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 16 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 17 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 18 (DC_DE) in #Datacenter 2
+[Thread-2] WARN VmAllocationPolicy - 25.90: VmAllocationPolicySimple: No suitable host found for Vm 19 (DC_DE) in #Datacenter 2
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 0 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 1 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 2 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 3 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 4 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 5 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 6 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 7 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 8 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 9 (DC_SE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 10 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 11 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 12 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 13 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 14 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 15 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 16 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 17 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 18 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Vm 19 (DC_DE) has been moved to the failed list because creation retry is not enabled.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 0 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 1 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 2 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 3 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 4 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 5 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 6 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 7 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 8 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 9 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 10 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 11 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 12 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 13 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 14 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 15 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 16 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 17 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 18 because it couldn't be mapped to any VM.
+[Thread-2] WARN DatacenterBroker - 26.00: EcmrDatacenterBroker1: Postponing execution of Cloudlet 19 because it couldn't be mapped to any VM.
+[Thread-2] INFO CloudSim - 26.00: Processing last events before simulation shutdown.
+[Thread-2] INFO DatacenterBroker - 26.00: EcmrDatacenterBroker1 is shutting down...
+[Thread-2] INFO CloudSim - Simulation: No more future events
+
+[Thread-2] INFO CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+[Thread-2] INFO Datacenter - 26.00: #Datacenter 3 is shutting down...
+[Thread-2] INFO Datacenter - 26.00: #Datacenter 5 is shutting down...
+[Thread-2] INFO CloudSim - 
+================== Simulation finished at time 26.00 ==================
+
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Simulation completed in 41.0 ms
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Collecting results from 0 finished cloudlets
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Simulation completed
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Results collected: 0 successful VMs, 20 failed VMs, 0.7222222222222222 kWh energy
+[Thread-1] INFO com.ecmr.baseline.Py4JGateway - 
+Shutting down gateway...
+[Thread-1] INFO com.ecmr.baseline.Py4JGateway - Py4J Gateway Server stopped

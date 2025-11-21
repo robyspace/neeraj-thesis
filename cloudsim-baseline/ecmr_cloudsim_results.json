@@ -1,0 +1,189 @@
+{
+  "timestamp": "2025-11-13T21:06:25.152854",
+  "metrics": {
+    "totalEnergy": 28970199.99999976,
+    "successfulVMs": 22,
+    "failedVMs": 78,
+    "avgExecutionTime": 182.29309090909095,
+    "totalVMs": 100,
+    "failureRate": 78.0
+  },
+  "placement_decisions": [
+    {
+      "executionTime": 140.978,
+      "finishTime": 166.978,
+      "vmId": 64,
+      "datacenterId": 2,
+      "hostId": 17,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 140.978,
+      "finishTime": 166.978,
+      "vmId": 34,
+      "datacenterId": 2,
+      "hostId": 7,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 213.03400000000002,
+      "finishTime": 239.03400000000002,
+      "vmId": 2,
+      "datacenterId": 2,
+      "hostId": 0,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 161.49800000000005,
+      "finishTime": 187.49800000000005,
+      "vmId": 67,
+      "datacenterId": 2,
+      "hostId": 18,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 213.03400000000002,
+      "finishTime": 239.03400000000002,
+      "vmId": 68,
+      "datacenterId": 2,
+      "hostId": 19,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 192.592,
+      "finishTime": 218.592,
+      "vmId": 5,
+      "datacenterId": 2,
+      "hostId": 1,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 263.592,
+      "finishTime": 289.592,
+      "vmId": 37,
+      "datacenterId": 2,
+      "hostId": 8,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 100.0,
+      "finishTime": 126.0,
+      "vmId": 6,
+      "datacenterId": 2,
+      "hostId": 2,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 213.03400000000002,
+      "finishTime": 239.03400000000002,
+      "vmId": 40,
+      "datacenterId": 2,
+      "hostId": 9,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 244.406,
+      "finishTime": 270.406,
+      "vmId": 41,
+      "datacenterId": 2,
+      "hostId": 10,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 222.74800000000002,
+      "finishTime": 248.74800000000002,
+      "vmId": 13,
+      "datacenterId": 2,
+      "hostId": 3,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 213.03400000000002,
+      "finishTime": 239.03400000000002,
+      "vmId": 46,
+      "datacenterId": 2,
+      "hostId": 11,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 151.56,
+      "finishTime": 177.56,
+      "vmId": 79,
+      "datacenterId": 2,
+      "hostId": 20,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 200.27,
+      "finishTime": 226.27,
+      "vmId": 15,
+      "datacenterId": 2,
+      "hostId": 4,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 151.56,
+      "finishTime": 177.56,
+      "vmId": 49,
+      "datacenterId": 2,
+      "hostId": 12,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 100.0,
+      "finishTime": 126.0,
+      "vmId": 50,
+      "datacenterId": 2,
+      "hostId": 13,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 200.27,
+      "finishTime": 226.27,
+      "vmId": 51,
+      "datacenterId": 2,
+      "hostId": 14,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 151.56,
+      "finishTime": 177.56,
+      "vmId": 53,
+      "datacenterId": 2,
+      "hostId": 15,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 200.27,
+      "finishTime": 226.27,
+      "vmId": 22,
+      "datacenterId": 2,
+      "hostId": 5,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 161.49800000000005,
+      "finishTime": 187.49800000000005,
+      "vmId": 24,
+      "datacenterId": 2,
+      "hostId": 6,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 161.49800000000005,
+      "finishTime": 187.49800000000005,
+      "vmId": 57,
+      "datacenterId": 2,
+      "hostId": 16,
+      "status": "SUCCESS"
+    },
+    {
+      "executionTime": 213.03400000000002,
+      "finishTime": 239.03400000000002,
+      "vmId": 95,
+      "datacenterId": 2,
+      "hostId": 21,
+      "status": "SUCCESS"
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "configuration": {
+    "duration_hours": 24,
+    "max_vms": 100,
+    "seed": 42,
+    "weights": {
+      "w1_energy": 0.33,
+      "w2_carbon": 0.33,
+      "w3_latency": 0.34
+    }
+  },
+  "metrics": {
+    "M1_RES_Utilization_pct": 54.83273345935732,
+    "M2_Carbon_Reduction_pct": 0,
+    "M3_Avg_Response_Time_ms": 47.78916537703246,
+    "M4_Failure_Rate_pct": 0.0,
+    "total_energy_kwh": 26.44999999999999,
+    "renewable_energy_kwh": 14.503258000000004,
+    "carbon_emissions_kg": 1.1745474441,
+    "total_vms": 100,
+    "placed_vms": 100,
+    "failed_vms": 0,
+    "latency_rejections": 200,
+    "res_rejections": 0
+  },
+  "placement_decisions": [
+    {
+      "vm_id": 1,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 2,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 3,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 4,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 5,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 6,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 7,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 8,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 9,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 10,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 11,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 12,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 13,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 14,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 15,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 16,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 17,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 18,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 19,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 20,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 21,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 22,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 23,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 24,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 25,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 26,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 27,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 28,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 29,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 30,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 31,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 32,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 33,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 34,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 35,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 36,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 37,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 38,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 39,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 40,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 41,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 42,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 43,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 44,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 45,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 46,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 47,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 48,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 49,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 50,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 51,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 52,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 53,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 54,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 55,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 56,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700850247819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 57,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 58,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 59,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 60,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 61,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 62,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 63,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 64,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 65,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 66,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 67,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 68,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 69,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 70,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 71,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 72,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27013039978191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 73,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 74,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700850247819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 75,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 76,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 77,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 78,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 79,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 80,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700850247819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 81,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 82,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 83,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 84,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 85,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 86,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27008502478191043,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 87,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700850247819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 88,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 89,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 90,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 91,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 92,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 93,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700623372819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 94,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 95,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 96,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 97,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27010771228191044,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 98,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27017577478191046,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 99,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.2700396497819105,
+      "timestamp": "2024-01-01T23:00:00"
+    },
+    {
+      "vm_id": 100,
+      "datacenter": "DC_DE",
+      "datacenter_type": "DG",
+      "distance_km": 477.8916537703248,
+      "latency_ms": 47.78916537703248,
+      "weighted_score": 0.27015308728191045,
+      "timestamp": "2024-01-01T23:00:00"
+    }
+  ]
+}

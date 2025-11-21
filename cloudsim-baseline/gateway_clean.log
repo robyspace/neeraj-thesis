@@ -1,0 +1,860 @@
+[main] INFO com.ecmr.baseline.Py4JGateway - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGateway - ECMR Baseline - Py4J Gateway Server
+[main] INFO com.ecmr.baseline.Py4JGateway - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGateway - Py4J Gateway Server started on port 25333
+[main] INFO com.ecmr.baseline.Py4JGateway - Python can now connect using: gateway = JavaGateway()
+[main] INFO com.ecmr.baseline.Py4JGateway - 
+Gateway is running. Python scripts can now connect.
+[main] INFO com.ecmr.baseline.Py4JGateway - Press Ctrl+C to stop the gateway.
+
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Initializing CloudSim simulation with config: {}
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Initializing CloudSim Plus simulation
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - EcmrDatacenterBroker initialized with ECMR-enforced placement
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - CloudSim initialized with ECMR-aware broker
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_IT
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_IT with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_IT created with ID: 2
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_SE with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_SE created with ID: 3
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_ES
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_ES with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_ES created with ID: 4
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_FR
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_FR with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_FR created with ID: 5
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Creating datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Creating datacenter: DC_DE with 100 servers
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Datacenter DC_DE created with ID: 6
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 0 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 1 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 2 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 3 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 4 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 5 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 6 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 7 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 8 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 9 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 10 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 11 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 12 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 13 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 14 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 15 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 16 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 17 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 18 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 19 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 20 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 21 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 22 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 23 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 24 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 25 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 26 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 27 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 28 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 29 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 30 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 31 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 32 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 33 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 34 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 35 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 36 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 37 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 38 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 39 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 40 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 41 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 42 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 43 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 44 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 45 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 46 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 47 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 48 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 49 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 50 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 51 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 52 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 53 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 54 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 55 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 56 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 57 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 58 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 59 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 60 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 61 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 62 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 63 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 64 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 65 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 66 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 67 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 68 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 69 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 70 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 71 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 72 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 73 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 74 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 75 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 76 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 77 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 78 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 79 submitted with ECMR target datacenter: DC_DE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 80 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 81 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 82 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 83 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 84 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 85 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 86 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 87 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 88 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 89 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 90 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 91 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 92 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 93 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 94 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 95 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 96 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 97 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 98 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 99 submitted with ECMR target datacenter: DC_SE
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Starting CloudSim simulation...
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Starting CloudSim simulation with 5 datacenters and 100 VMs
+[Thread-2] INFO CloudSim - 
+================== Starting CloudSim Plus 8.5.1 ==================
+
+[Thread-2] INFO DatacenterBroker - Broker 1 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 2 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 3 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 4 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 5 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 6 is starting...
+[Thread-2] INFO CloudSim - Entities started.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: List of 5 datacenters(s) received.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 3 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 4 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 5 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 6 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 7 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 8 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 9 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 10 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 11 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 12 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 13 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 14 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 15 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 16 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 17 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 18 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 19 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 20 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 21 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 22 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 23 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 24 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 25 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 26 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 27 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 28 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 29 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 30 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 31 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 32 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 33 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 34 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 35 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 36 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 37 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 38 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 39 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 40 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 41 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 42 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 43 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 44 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 45 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 46 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 47 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 48 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 49 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 50 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 51 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 52 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 53 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 54 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 55 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 56 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 57 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 58 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 59 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 60 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 61 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 62 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 63 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 64 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 65 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 66 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 67 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 68 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 69 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 70 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 71 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 72 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 73 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 74 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 75 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 76 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 77 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 78 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 79 (DC_DE) inside #Datacenter 6
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 80 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 81 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 82 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 83 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 84 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 85 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 86 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 87 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 88 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 89 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 90 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 91 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 92 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 93 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 94 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 95 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 96 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 97 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 98 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 99 (DC_SE) inside #Datacenter 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 20 (DC_SE) is booting up right away in Host 0/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 20 (DC_SE) has been allocated to Host 0/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 21 (DC_SE) is booting up right away in Host 1/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 21 (DC_SE) has been allocated to Host 1/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 22 (DC_SE) is booting up right away in Host 2/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 22 (DC_SE) has been allocated to Host 2/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 23 (DC_SE) is booting up right away in Host 3/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 23 (DC_SE) has been allocated to Host 3/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 24 (DC_SE) is booting up right away in Host 4/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 24 (DC_SE) has been allocated to Host 4/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 25 (DC_SE) is booting up right away in Host 5/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 25 (DC_SE) has been allocated to Host 5/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 26 (DC_SE) is booting up right away in Host 6/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 26 (DC_SE) has been allocated to Host 6/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 27 (DC_SE) is booting up right away in Host 7/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 27 (DC_SE) has been allocated to Host 7/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 28 (DC_SE) is booting up right away in Host 8/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 28 (DC_SE) has been allocated to Host 8/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 29 (DC_SE) is booting up right away in Host 9/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 29 (DC_SE) has been allocated to Host 9/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 30 (DC_SE) is booting up right away in Host 10/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 30 (DC_SE) has been allocated to Host 10/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 31 (DC_SE) is booting up right away in Host 11/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 31 (DC_SE) has been allocated to Host 11/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 32 (DC_SE) is booting up right away in Host 12/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 32 (DC_SE) has been allocated to Host 12/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 33 (DC_SE) is booting up right away in Host 13/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 33 (DC_SE) has been allocated to Host 13/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 34 (DC_SE) is booting up right away in Host 14/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 34 (DC_SE) has been allocated to Host 14/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 35 (DC_SE) is booting up right away in Host 15/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 35 (DC_SE) has been allocated to Host 15/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 36 (DC_SE) is booting up right away in Host 16/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 36 (DC_SE) has been allocated to Host 16/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 37 (DC_SE) is booting up right away in Host 17/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 37 (DC_SE) has been allocated to Host 17/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 38 (DC_SE) is booting up right away in Host 18/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 38 (DC_SE) has been allocated to Host 18/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 39 (DC_SE) is booting up right away in Host 19/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 39 (DC_SE) has been allocated to Host 19/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 40 (DC_SE) is booting up right away in Host 20/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 40 (DC_SE) has been allocated to Host 20/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 41 (DC_SE) is booting up right away in Host 21/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 41 (DC_SE) has been allocated to Host 21/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 42 (DC_SE) is booting up right away in Host 22/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 42 (DC_SE) has been allocated to Host 22/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 43 (DC_SE) is booting up right away in Host 23/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 43 (DC_SE) has been allocated to Host 23/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 44 (DC_SE) is booting up right away in Host 24/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 44 (DC_SE) has been allocated to Host 24/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 45 (DC_SE) is booting up right away in Host 25/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 45 (DC_SE) has been allocated to Host 25/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 46 (DC_SE) is booting up right away in Host 26/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 46 (DC_SE) has been allocated to Host 26/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 47 (DC_SE) is booting up right away in Host 27/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 47 (DC_SE) has been allocated to Host 27/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 48 (DC_SE) is booting up right away in Host 28/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 48 (DC_SE) has been allocated to Host 28/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 49 (DC_SE) is booting up right away in Host 29/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 49 (DC_SE) has been allocated to Host 29/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 80 (DC_SE) is booting up right away in Host 30/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 80 (DC_SE) has been allocated to Host 30/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 81 (DC_SE) is booting up right away in Host 31/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 81 (DC_SE) has been allocated to Host 31/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 82 (DC_SE) is booting up right away in Host 32/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 82 (DC_SE) has been allocated to Host 32/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 83 (DC_SE) is booting up right away in Host 33/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 83 (DC_SE) has been allocated to Host 33/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 84 (DC_SE) is booting up right away in Host 34/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 84 (DC_SE) has been allocated to Host 34/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 85 (DC_SE) is booting up right away in Host 35/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 85 (DC_SE) has been allocated to Host 35/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 86 (DC_SE) is booting up right away in Host 36/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 86 (DC_SE) has been allocated to Host 36/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 87 (DC_SE) is booting up right away in Host 37/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 87 (DC_SE) has been allocated to Host 37/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 88 (DC_SE) is booting up right away in Host 38/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 88 (DC_SE) has been allocated to Host 38/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 89 (DC_SE) is booting up right away in Host 39/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 89 (DC_SE) has been allocated to Host 39/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 90 (DC_SE) is booting up right away in Host 40/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 90 (DC_SE) has been allocated to Host 40/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 91 (DC_SE) is booting up right away in Host 41/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 91 (DC_SE) has been allocated to Host 41/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 92 (DC_SE) is booting up right away in Host 42/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 92 (DC_SE) has been allocated to Host 42/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 93 (DC_SE) is booting up right away in Host 43/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 93 (DC_SE) has been allocated to Host 43/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 94 (DC_SE) is booting up right away in Host 44/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 94 (DC_SE) has been allocated to Host 44/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 95 (DC_SE) is booting up right away in Host 45/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 95 (DC_SE) has been allocated to Host 45/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 96 (DC_SE) is booting up right away in Host 46/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 96 (DC_SE) has been allocated to Host 46/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 97 (DC_SE) is booting up right away in Host 47/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 97 (DC_SE) has been allocated to Host 47/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 98 (DC_SE) is booting up right away in Host 48/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 98 (DC_SE) has been allocated to Host 48/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 99 (DC_SE) is booting up right away in Host 49/#DC 3, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 99 (DC_SE) has been allocated to Host 49/#DC 3
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 0 (DC_DE) is booting up right away in Host 0/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 (DC_DE) has been allocated to Host 0/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 1 (DC_DE) is booting up right away in Host 1/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 (DC_DE) has been allocated to Host 1/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 2 (DC_DE) is booting up right away in Host 2/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 2 (DC_DE) has been allocated to Host 2/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 3 (DC_DE) is booting up right away in Host 3/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 3 (DC_DE) has been allocated to Host 3/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 4 (DC_DE) is booting up right away in Host 4/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 4 (DC_DE) has been allocated to Host 4/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 5 (DC_DE) is booting up right away in Host 5/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 5 (DC_DE) has been allocated to Host 5/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 6 (DC_DE) is booting up right away in Host 6/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 6 (DC_DE) has been allocated to Host 6/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 7 (DC_DE) is booting up right away in Host 7/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 7 (DC_DE) has been allocated to Host 7/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 8 (DC_DE) is booting up right away in Host 8/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 8 (DC_DE) has been allocated to Host 8/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 9 (DC_DE) is booting up right away in Host 9/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 9 (DC_DE) has been allocated to Host 9/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 10 (DC_DE) is booting up right away in Host 10/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 10 (DC_DE) has been allocated to Host 10/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 11 (DC_DE) is booting up right away in Host 11/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 11 (DC_DE) has been allocated to Host 11/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 12 (DC_DE) is booting up right away in Host 12/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 12 (DC_DE) has been allocated to Host 12/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 13 (DC_DE) is booting up right away in Host 13/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 13 (DC_DE) has been allocated to Host 13/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 14 (DC_DE) is booting up right away in Host 14/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 14 (DC_DE) has been allocated to Host 14/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 15 (DC_DE) is booting up right away in Host 15/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 15 (DC_DE) has been allocated to Host 15/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 16 (DC_DE) is booting up right away in Host 16/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 16 (DC_DE) has been allocated to Host 16/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 17 (DC_DE) is booting up right away in Host 17/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 17 (DC_DE) has been allocated to Host 17/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 18 (DC_DE) is booting up right away in Host 18/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 18 (DC_DE) has been allocated to Host 18/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 19 (DC_DE) is booting up right away in Host 19/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 19 (DC_DE) has been allocated to Host 19/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 50 (DC_DE) is booting up right away in Host 20/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 50 (DC_DE) has been allocated to Host 20/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 51 (DC_DE) is booting up right away in Host 21/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 51 (DC_DE) has been allocated to Host 21/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 52 (DC_DE) is booting up right away in Host 22/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 52 (DC_DE) has been allocated to Host 22/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 53 (DC_DE) is booting up right away in Host 23/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 53 (DC_DE) has been allocated to Host 23/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 54 (DC_DE) is booting up right away in Host 24/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 54 (DC_DE) has been allocated to Host 24/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 55 (DC_DE) is booting up right away in Host 25/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 55 (DC_DE) has been allocated to Host 25/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 56 (DC_DE) is booting up right away in Host 26/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 56 (DC_DE) has been allocated to Host 26/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 57 (DC_DE) is booting up right away in Host 27/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 57 (DC_DE) has been allocated to Host 27/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 58 (DC_DE) is booting up right away in Host 28/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 58 (DC_DE) has been allocated to Host 28/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 59 (DC_DE) is booting up right away in Host 29/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 59 (DC_DE) has been allocated to Host 29/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 60 (DC_DE) is booting up right away in Host 30/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 60 (DC_DE) has been allocated to Host 30/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 61 (DC_DE) is booting up right away in Host 31/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 61 (DC_DE) has been allocated to Host 31/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 62 (DC_DE) is booting up right away in Host 32/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 62 (DC_DE) has been allocated to Host 32/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 63 (DC_DE) is booting up right away in Host 33/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 63 (DC_DE) has been allocated to Host 33/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 64 (DC_DE) is booting up right away in Host 34/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 64 (DC_DE) has been allocated to Host 34/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 65 (DC_DE) is booting up right away in Host 35/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 65 (DC_DE) has been allocated to Host 35/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 66 (DC_DE) is booting up right away in Host 36/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 66 (DC_DE) has been allocated to Host 36/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 67 (DC_DE) is booting up right away in Host 37/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 67 (DC_DE) has been allocated to Host 37/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 68 (DC_DE) is booting up right away in Host 38/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 68 (DC_DE) has been allocated to Host 38/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 69 (DC_DE) is booting up right away in Host 39/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 69 (DC_DE) has been allocated to Host 39/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 70 (DC_DE) is booting up right away in Host 40/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 70 (DC_DE) has been allocated to Host 40/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 71 (DC_DE) is booting up right away in Host 41/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 71 (DC_DE) has been allocated to Host 41/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 72 (DC_DE) is booting up right away in Host 42/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 72 (DC_DE) has been allocated to Host 42/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 73 (DC_DE) is booting up right away in Host 43/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 73 (DC_DE) has been allocated to Host 43/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 74 (DC_DE) is booting up right away in Host 44/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 74 (DC_DE) has been allocated to Host 44/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 75 (DC_DE) is booting up right away in Host 45/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 75 (DC_DE) has been allocated to Host 45/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 76 (DC_DE) is booting up right away in Host 46/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 76 (DC_DE) has been allocated to Host 46/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 77 (DC_DE) is booting up right away in Host 47/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 77 (DC_DE) has been allocated to Host 47/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 78 (DC_DE) is booting up right away in Host 48/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 78 (DC_DE) has been allocated to Host 48/#DC 6
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 79 (DC_DE) is booting up right away in Host 49/#DC 6, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 79 (DC_DE) has been allocated to Host 49/#DC 6
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 0 to Vm 20 (DC_SE) inside Host 0/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 1 to Vm 21 (DC_SE) inside Host 1/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 2 to Vm 22 (DC_SE) inside Host 2/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 3 to Vm 23 (DC_SE) inside Host 3/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 4 to Vm 24 (DC_SE) inside Host 4/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 5 to Vm 25 (DC_SE) inside Host 5/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 6 to Vm 26 (DC_SE) inside Host 6/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 7 to Vm 27 (DC_SE) inside Host 7/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 8 to Vm 28 (DC_SE) inside Host 8/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 9 to Vm 29 (DC_SE) inside Host 9/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 10 to Vm 30 (DC_SE) inside Host 10/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 11 to Vm 31 (DC_SE) inside Host 11/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 12 to Vm 32 (DC_SE) inside Host 12/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 13 to Vm 33 (DC_SE) inside Host 13/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 14 to Vm 34 (DC_SE) inside Host 14/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 15 to Vm 35 (DC_SE) inside Host 15/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 16 to Vm 36 (DC_SE) inside Host 16/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 17 to Vm 37 (DC_SE) inside Host 17/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 18 to Vm 38 (DC_SE) inside Host 18/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 19 to Vm 39 (DC_SE) inside Host 19/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 20 to Vm 40 (DC_SE) inside Host 20/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 21 to Vm 41 (DC_SE) inside Host 21/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 22 to Vm 42 (DC_SE) inside Host 22/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 23 to Vm 43 (DC_SE) inside Host 23/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 24 to Vm 44 (DC_SE) inside Host 24/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 25 to Vm 45 (DC_SE) inside Host 25/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 26 to Vm 46 (DC_SE) inside Host 26/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 27 to Vm 47 (DC_SE) inside Host 27/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 28 to Vm 48 (DC_SE) inside Host 28/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 29 to Vm 49 (DC_SE) inside Host 29/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 30 to Vm 80 (DC_SE) inside Host 30/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 31 to Vm 81 (DC_SE) inside Host 31/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 32 to Vm 82 (DC_SE) inside Host 32/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 33 to Vm 83 (DC_SE) inside Host 33/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 34 to Vm 84 (DC_SE) inside Host 34/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 35 to Vm 85 (DC_SE) inside Host 35/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 36 to Vm 86 (DC_SE) inside Host 36/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 37 to Vm 87 (DC_SE) inside Host 37/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 38 to Vm 88 (DC_SE) inside Host 38/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 39 to Vm 89 (DC_SE) inside Host 39/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 40 to Vm 90 (DC_SE) inside Host 40/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 41 to Vm 91 (DC_SE) inside Host 41/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 42 to Vm 92 (DC_SE) inside Host 42/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 43 to Vm 93 (DC_SE) inside Host 43/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 44 to Vm 94 (DC_SE) inside Host 44/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 45 to Vm 95 (DC_SE) inside Host 45/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 46 to Vm 96 (DC_SE) inside Host 46/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 47 to Vm 97 (DC_SE) inside Host 47/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 48 to Vm 98 (DC_SE) inside Host 48/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 49 to Vm 99 (DC_SE) inside Host 49/#DC 3.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 50 to Vm 0 (DC_DE) inside Host 0/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 51 to Vm 1 (DC_DE) inside Host 1/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 52 to Vm 2 (DC_DE) inside Host 2/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 53 to Vm 3 (DC_DE) inside Host 3/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 54 to Vm 4 (DC_DE) inside Host 4/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 55 to Vm 5 (DC_DE) inside Host 5/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 56 to Vm 6 (DC_DE) inside Host 6/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 57 to Vm 7 (DC_DE) inside Host 7/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 58 to Vm 8 (DC_DE) inside Host 8/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 59 to Vm 9 (DC_DE) inside Host 9/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 60 to Vm 10 (DC_DE) inside Host 10/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 61 to Vm 11 (DC_DE) inside Host 11/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 62 to Vm 12 (DC_DE) inside Host 12/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 63 to Vm 13 (DC_DE) inside Host 13/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 64 to Vm 14 (DC_DE) inside Host 14/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 65 to Vm 15 (DC_DE) inside Host 15/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 66 to Vm 16 (DC_DE) inside Host 16/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 67 to Vm 17 (DC_DE) inside Host 17/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 68 to Vm 18 (DC_DE) inside Host 18/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 69 to Vm 19 (DC_DE) inside Host 19/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 70 to Vm 50 (DC_DE) inside Host 20/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 71 to Vm 51 (DC_DE) inside Host 21/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 72 to Vm 52 (DC_DE) inside Host 22/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 73 to Vm 53 (DC_DE) inside Host 23/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 74 to Vm 54 (DC_DE) inside Host 24/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 75 to Vm 55 (DC_DE) inside Host 25/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 76 to Vm 56 (DC_DE) inside Host 26/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 77 to Vm 57 (DC_DE) inside Host 27/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 78 to Vm 58 (DC_DE) inside Host 28/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 79 to Vm 59 (DC_DE) inside Host 29/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 80 to Vm 60 (DC_DE) inside Host 30/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 81 to Vm 61 (DC_DE) inside Host 31/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 82 to Vm 62 (DC_DE) inside Host 32/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 83 to Vm 63 (DC_DE) inside Host 33/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 84 to Vm 64 (DC_DE) inside Host 34/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 85 to Vm 65 (DC_DE) inside Host 35/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 86 to Vm 66 (DC_DE) inside Host 36/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 87 to Vm 67 (DC_DE) inside Host 37/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 88 to Vm 68 (DC_DE) inside Host 38/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 89 to Vm 69 (DC_DE) inside Host 39/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 90 to Vm 70 (DC_DE) inside Host 40/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 91 to Vm 71 (DC_DE) inside Host 41/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 92 to Vm 72 (DC_DE) inside Host 42/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 93 to Vm 73 (DC_DE) inside Host 43/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 94 to Vm 74 (DC_DE) inside Host 44/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 95 to Vm 75 (DC_DE) inside Host 45/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 96 to Vm 76 (DC_DE) inside Host 46/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 97 to Vm 77 (DC_DE) inside Host 47/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 98 to Vm 78 (DC_DE) inside Host 48/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 99 to Vm 79 (DC_DE) inside Host 49/#DC 6.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: All 100 waiting Cloudlets submitted to some VM.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 0 finished in Vm 20 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 1 finished in Vm 21 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 2 finished in Vm 22 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 3 finished in Vm 23 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 4 finished in Vm 24 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 5 finished in Vm 25 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 6 finished in Vm 26 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 7 finished in Vm 27 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 8 finished in Vm 28 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 9 finished in Vm 29 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 10 finished in Vm 30 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 12 finished in Vm 32 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 16 finished in Vm 36 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 17 finished in Vm 37 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 18 finished in Vm 38 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 19 finished in Vm 39 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 30 finished in Vm 80 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 31 finished in Vm 81 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 32 finished in Vm 82 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 33 finished in Vm 83 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 34 finished in Vm 84 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 36 finished in Vm 86 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 37 finished in Vm 87 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 39 finished in Vm 89 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 40 finished in Vm 90 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 41 finished in Vm 91 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 42 finished in Vm 92 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 43 finished in Vm 93 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 44 finished in Vm 94 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 45 finished in Vm 95 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 46 finished in Vm 96 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 47 finished in Vm 97 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 48 finished in Vm 98 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 49 finished in Vm 99 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 51 finished in Vm 1 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 52 finished in Vm 2 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 53 finished in Vm 3 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 56 finished in Vm 6 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 59 finished in Vm 9 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 60 finished in Vm 10 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 63 finished in Vm 13 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 64 finished in Vm 14 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 65 finished in Vm 15 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 67 finished in Vm 17 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 69 finished in Vm 19 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 74 finished in Vm 54 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 75 finished in Vm 55 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 76 finished in Vm 56 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 77 finished in Vm 57 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 78 finished in Vm 58 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 81 finished in Vm 61 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 85 finished in Vm 65 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 86 finished in Vm 66 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 88 finished in Vm 68 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 20.11: EcmrDatacenterBroker1: Cloudlet 95 finished in Vm 75 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 24.25: EcmrDatacenterBroker1: Cloudlet 14 finished in Vm 34 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 24.25: EcmrDatacenterBroker1: Cloudlet 15 finished in Vm 35 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 61 finished in Vm 11 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 66 finished in Vm 16 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 68 finished in Vm 18 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 83 finished in Vm 63 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 92 finished in Vm 72 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 97 finished in Vm 77 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.11: EcmrDatacenterBroker1: Cloudlet 99 finished in Vm 79 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.23: EcmrDatacenterBroker1: Cloudlet 35 finished in Vm 85 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 25.23: EcmrDatacenterBroker1: Cloudlet 38 finished in Vm 88 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 54 finished in Vm 4 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 55 finished in Vm 5 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 70 finished in Vm 50 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 72 finished in Vm 52 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 79 finished in Vm 59 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.78: EcmrDatacenterBroker1: Cloudlet 94 finished in Vm 74 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.89: EcmrDatacenterBroker1: Cloudlet 11 finished in Vm 31 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 26.89: EcmrDatacenterBroker1: Cloudlet 13 finished in Vm 33 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 28.23: EcmrDatacenterBroker1: Cloudlet 93 finished in Vm 73 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 30.26: EcmrDatacenterBroker1: Cloudlet 50 finished in Vm 0 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 30.26: EcmrDatacenterBroker1: Cloudlet 90 finished in Vm 70 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 32.29: EcmrDatacenterBroker1: Cloudlet 82 finished in Vm 62 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 33.51: EcmrDatacenterBroker1: Cloudlet 62 finished in Vm 12 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 33.51: EcmrDatacenterBroker1: Cloudlet 71 finished in Vm 51 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 33.51: EcmrDatacenterBroker1: Cloudlet 73 finished in Vm 53 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 33.59: EcmrDatacenterBroker1: Cloudlet 23 finished in Vm 43 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 35.33: EcmrDatacenterBroker1: Cloudlet 87 finished in Vm 67 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 36.37: EcmrDatacenterBroker1: Cloudlet 91 finished in Vm 71 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.14: EcmrDatacenterBroker1: Cloudlet 27 finished in Vm 47 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.17: EcmrDatacenterBroker1: Cloudlet 57 finished in Vm 7 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.17: EcmrDatacenterBroker1: Cloudlet 80 finished in Vm 60 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.17: EcmrDatacenterBroker1: Cloudlet 98 finished in Vm 78 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 47.04: EcmrDatacenterBroker1: Cloudlet 84 finished in Vm 64 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 50.20: EcmrDatacenterBroker1: Cloudlet 21 finished in Vm 41 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 50.20: EcmrDatacenterBroker1: Cloudlet 22 finished in Vm 42 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 50.20: EcmrDatacenterBroker1: Cloudlet 25 finished in Vm 45 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 50.20: EcmrDatacenterBroker1: Cloudlet 26 finished in Vm 46 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 60.55: EcmrDatacenterBroker1: Cloudlet 58 finished in Vm 8 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 70.73: EcmrDatacenterBroker1: Cloudlet 28 finished in Vm 48 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 70.73: EcmrDatacenterBroker1: Cloudlet 29 finished in Vm 49 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 70.78: EcmrDatacenterBroker1: Cloudlet 89 finished in Vm 69 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 70.78: EcmrDatacenterBroker1: Cloudlet 96 finished in Vm 76 (DC_DE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 100.36: EcmrDatacenterBroker1: Cloudlet 20 finished in Vm 40 (DC_SE) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 141.38: EcmrDatacenterBroker1: Cloudlet 24 finished in Vm 44 (DC_SE) and returned to broker.
+[Thread-2] INFO CloudSim - 141.49: Processing last events before simulation shutdown.
+[Thread-2] INFO DatacenterBroker - 141.49: EcmrDatacenterBroker1 is shutting down...
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 79 (DC_DE) destruction on Host 49/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 78 (DC_DE) destruction on Host 48/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 77 (DC_DE) destruction on Host 47/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 76 (DC_DE) destruction on Host 46/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 75 (DC_DE) destruction on Host 45/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 74 (DC_DE) destruction on Host 44/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 73 (DC_DE) destruction on Host 43/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 72 (DC_DE) destruction on Host 42/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 71 (DC_DE) destruction on Host 41/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 70 (DC_DE) destruction on Host 40/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 69 (DC_DE) destruction on Host 39/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 68 (DC_DE) destruction on Host 38/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 67 (DC_DE) destruction on Host 37/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 66 (DC_DE) destruction on Host 36/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 65 (DC_DE) destruction on Host 35/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 64 (DC_DE) destruction on Host 34/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 63 (DC_DE) destruction on Host 33/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 62 (DC_DE) destruction on Host 32/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 61 (DC_DE) destruction on Host 31/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 60 (DC_DE) destruction on Host 30/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 59 (DC_DE) destruction on Host 29/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 58 (DC_DE) destruction on Host 28/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 57 (DC_DE) destruction on Host 27/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 56 (DC_DE) destruction on Host 26/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 55 (DC_DE) destruction on Host 25/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 54 (DC_DE) destruction on Host 24/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 53 (DC_DE) destruction on Host 23/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 52 (DC_DE) destruction on Host 22/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 51 (DC_DE) destruction on Host 21/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 50 (DC_DE) destruction on Host 20/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 19 (DC_DE) destruction on Host 19/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 18 (DC_DE) destruction on Host 18/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 17 (DC_DE) destruction on Host 17/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 16 (DC_DE) destruction on Host 16/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 15 (DC_DE) destruction on Host 15/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 14 (DC_DE) destruction on Host 14/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 13 (DC_DE) destruction on Host 13/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 12 (DC_DE) destruction on Host 12/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 11 (DC_DE) destruction on Host 11/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 10 (DC_DE) destruction on Host 10/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 9 (DC_DE) destruction on Host 9/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 8 (DC_DE) destruction on Host 8/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 7 (DC_DE) destruction on Host 7/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 6 (DC_DE) destruction on Host 6/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 5 (DC_DE) destruction on Host 5/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 4 (DC_DE) destruction on Host 4/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 3 (DC_DE) destruction on Host 3/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 2 (DC_DE) destruction on Host 2/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 1 (DC_DE) destruction on Host 1/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 0 (DC_DE) destruction on Host 0/#DC 6. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 99 (DC_SE) destruction on Host 49/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 98 (DC_SE) destruction on Host 48/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 97 (DC_SE) destruction on Host 47/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 96 (DC_SE) destruction on Host 46/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 95 (DC_SE) destruction on Host 45/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 94 (DC_SE) destruction on Host 44/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 93 (DC_SE) destruction on Host 43/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 92 (DC_SE) destruction on Host 42/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 91 (DC_SE) destruction on Host 41/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 90 (DC_SE) destruction on Host 40/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 89 (DC_SE) destruction on Host 39/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 88 (DC_SE) destruction on Host 38/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 87 (DC_SE) destruction on Host 37/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 86 (DC_SE) destruction on Host 36/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 85 (DC_SE) destruction on Host 35/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 84 (DC_SE) destruction on Host 34/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 83 (DC_SE) destruction on Host 33/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 82 (DC_SE) destruction on Host 32/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 81 (DC_SE) destruction on Host 31/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 80 (DC_SE) destruction on Host 30/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 49 (DC_SE) destruction on Host 29/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 48 (DC_SE) destruction on Host 28/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 47 (DC_SE) destruction on Host 27/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 46 (DC_SE) destruction on Host 26/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 45 (DC_SE) destruction on Host 25/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 44 (DC_SE) destruction on Host 24/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 43 (DC_SE) destruction on Host 23/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 42 (DC_SE) destruction on Host 22/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 41 (DC_SE) destruction on Host 21/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 40 (DC_SE) destruction on Host 20/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 39 (DC_SE) destruction on Host 19/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 38 (DC_SE) destruction on Host 18/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 37 (DC_SE) destruction on Host 17/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 36 (DC_SE) destruction on Host 16/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 35 (DC_SE) destruction on Host 15/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 34 (DC_SE) destruction on Host 14/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 33 (DC_SE) destruction on Host 13/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 32 (DC_SE) destruction on Host 12/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 31 (DC_SE) destruction on Host 11/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 30 (DC_SE) destruction on Host 10/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 29 (DC_SE) destruction on Host 9/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 28 (DC_SE) destruction on Host 8/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 27 (DC_SE) destruction on Host 7/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 26 (DC_SE) destruction on Host 6/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 25 (DC_SE) destruction on Host 5/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 24 (DC_SE) destruction on Host 4/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 23 (DC_SE) destruction on Host 3/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 22 (DC_SE) destruction on Host 2/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 21 (DC_SE) destruction on Host 1/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 141.49: VmSimple: Requesting Vm 20 (DC_SE) destruction on Host 0/#DC 3. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 99 (DC_SE) destroyed on Host 49/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 98 (DC_SE) destroyed on Host 48/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 97 (DC_SE) destroyed on Host 47/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 96 (DC_SE) destroyed on Host 46/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 95 (DC_SE) destroyed on Host 45/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 94 (DC_SE) destroyed on Host 44/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 93 (DC_SE) destroyed on Host 43/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 92 (DC_SE) destroyed on Host 42/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 91 (DC_SE) destroyed on Host 41/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 90 (DC_SE) destroyed on Host 40/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 89 (DC_SE) destroyed on Host 39/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 88 (DC_SE) destroyed on Host 38/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 87 (DC_SE) destroyed on Host 37/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 86 (DC_SE) destroyed on Host 36/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 85 (DC_SE) destroyed on Host 35/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 84 (DC_SE) destroyed on Host 34/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 83 (DC_SE) destroyed on Host 33/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 82 (DC_SE) destroyed on Host 32/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 81 (DC_SE) destroyed on Host 31/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 80 (DC_SE) destroyed on Host 30/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 49 (DC_SE) destroyed on Host 29/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 48 (DC_SE) destroyed on Host 28/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 47 (DC_SE) destroyed on Host 27/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 46 (DC_SE) destroyed on Host 26/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 45 (DC_SE) destroyed on Host 25/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 44 (DC_SE) destroyed on Host 24/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 43 (DC_SE) destroyed on Host 23/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 42 (DC_SE) destroyed on Host 22/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 41 (DC_SE) destroyed on Host 21/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 40 (DC_SE) destroyed on Host 20/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 39 (DC_SE) destroyed on Host 19/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 38 (DC_SE) destroyed on Host 18/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 37 (DC_SE) destroyed on Host 17/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 36 (DC_SE) destroyed on Host 16/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 35 (DC_SE) destroyed on Host 15/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 34 (DC_SE) destroyed on Host 14/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 33 (DC_SE) destroyed on Host 13/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 32 (DC_SE) destroyed on Host 12/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 31 (DC_SE) destroyed on Host 11/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 30 (DC_SE) destroyed on Host 10/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 29 (DC_SE) destroyed on Host 9/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 28 (DC_SE) destroyed on Host 8/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 27 (DC_SE) destroyed on Host 7/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 26 (DC_SE) destroyed on Host 6/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 25 (DC_SE) destroyed on Host 5/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 24 (DC_SE) destroyed on Host 4/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 23 (DC_SE) destroyed on Host 3/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 22 (DC_SE) destroyed on Host 2/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 21 (DC_SE) destroyed on Host 1/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3: Vm 20 (DC_SE) destroyed on Host 0/#DC 3. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 79 (DC_DE) destroyed on Host 49/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 78 (DC_DE) destroyed on Host 48/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 77 (DC_DE) destroyed on Host 47/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 76 (DC_DE) destroyed on Host 46/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 75 (DC_DE) destroyed on Host 45/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 74 (DC_DE) destroyed on Host 44/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 73 (DC_DE) destroyed on Host 43/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 72 (DC_DE) destroyed on Host 42/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 71 (DC_DE) destroyed on Host 41/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 70 (DC_DE) destroyed on Host 40/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 69 (DC_DE) destroyed on Host 39/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 68 (DC_DE) destroyed on Host 38/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 67 (DC_DE) destroyed on Host 37/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 66 (DC_DE) destroyed on Host 36/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 65 (DC_DE) destroyed on Host 35/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 64 (DC_DE) destroyed on Host 34/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 63 (DC_DE) destroyed on Host 33/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 62 (DC_DE) destroyed on Host 32/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 61 (DC_DE) destroyed on Host 31/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 60 (DC_DE) destroyed on Host 30/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 59 (DC_DE) destroyed on Host 29/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 58 (DC_DE) destroyed on Host 28/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 57 (DC_DE) destroyed on Host 27/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 56 (DC_DE) destroyed on Host 26/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 55 (DC_DE) destroyed on Host 25/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 54 (DC_DE) destroyed on Host 24/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 53 (DC_DE) destroyed on Host 23/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 52 (DC_DE) destroyed on Host 22/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 51 (DC_DE) destroyed on Host 21/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 50 (DC_DE) destroyed on Host 20/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 19 (DC_DE) destroyed on Host 19/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 18 (DC_DE) destroyed on Host 18/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 17 (DC_DE) destroyed on Host 17/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 16 (DC_DE) destroyed on Host 16/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 15 (DC_DE) destroyed on Host 15/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 14 (DC_DE) destroyed on Host 14/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 13 (DC_DE) destroyed on Host 13/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 12 (DC_DE) destroyed on Host 12/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 11 (DC_DE) destroyed on Host 11/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 10 (DC_DE) destroyed on Host 10/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 9 (DC_DE) destroyed on Host 9/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 8 (DC_DE) destroyed on Host 8/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 7 (DC_DE) destroyed on Host 7/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 6 (DC_DE) destroyed on Host 6/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 5 (DC_DE) destroyed on Host 5/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 4 (DC_DE) destroyed on Host 4/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 3 (DC_DE) destroyed on Host 3/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 2 (DC_DE) destroyed on Host 2/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 1 (DC_DE) destroyed on Host 1/#DC 6. 
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 6: Vm 0 (DC_DE) destroyed on Host 0/#DC 6. 
+[Thread-2] INFO CloudSim - Simulation: No more future events
+
+[Thread-2] INFO CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 3 is shutting down...
+[Thread-2] INFO Datacenter - 141.49: #Datacenter 5 is shutting down...
+[Thread-2] INFO CloudSim - 
+================== Simulation finished at time 141.49 ==================
+
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Simulation completed in 74.0 ms
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Collecting results from 100 finished cloudlets
+[Thread-2] INFO com.ecmr.baseline.Py4JGateway - Simulation completed
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulation - Results collected: 100 successful VMs, 0 failed VMs, 3.9303888888889205 kWh energy
+[Thread-1] INFO com.ecmr.baseline.Py4JGateway - 
+Shutting down gateway...
+[Thread-1] INFO com.ecmr.baseline.Py4JGateway - Py4J Gateway Server stopped
