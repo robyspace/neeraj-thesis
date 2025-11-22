@@ -1,0 +1,59 @@
+{
+  "pareto_front_size": 2,
+  "hypervolume": 0.3562136514700766,
+  "expected_utility": -2.4913138394719554,
+  "best_energy_kwh": 0.5535851737777768,
+  "best_carbon_gco2": 0.0,
+  "best_latency_ms": 5.0,
+  "worst_energy_kwh": 0.5535851737777768,
+  "worst_carbon_gco2": 8.325921013617762,
+  "worst_latency_ms": 9.298613896967423,
+  "avg_energy_kwh": 0.5535851737777768,
+  "avg_carbon_gco2": 4.162960506808881,
+  "avg_latency_ms": 7.149306948483711,
+  "all_solutions": [
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 1,
+        "preference": [
+          0.09784296501149996,
+          0.6276139633959614,
+          0.27454307159253855
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5535851737777768,
+        8.325921013617762,
+        5.0
+      ],
+      "metadata": {
+        "policy_id": "extended_1_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 0
+      }
+    }
+  ],
+  "duration_seconds": 26.616048097610474,
+  "algorithm": "C-MORL",
+  "config": {
+    "hours": 2,
+    "vms_per_hour": 5,
+    "total_vms": 10,
+    "n_policies": 3,
+    "timesteps_per_policy": 1000,
+    "n_extend": 2
+  }
+}

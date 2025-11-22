@@ -1,0 +1,40 @@
+{
+  "pareto_front_size": 2,
+  "hypervolume": 0.3562136514700766,
+  "expected_utility": -2.4913138394719554,
+  "solutions": [
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 1,
+        "preference": [
+          0.09784296501149996,
+          0.6276139633959614,
+          0.27454307159253855
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5535851737777768,
+        8.325921013617762,
+        5.0
+      ],
+      "metadata": {
+        "policy_id": "extended_1_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "it_energy_kwh": 22.6191,
+  "total_energy_kwh": 26.6906,
+  "average_pue": 1.18,
+  "successful_vms": 240,
+  "failed_vms": 0,
+  "success_rate_pct": 100.0,
+  "total_carbon_gco2": 1.9582,
+  "avg_carbon_intensity": 37.6,
+  "duration_seconds": 0.449420690536499,
+  "algorithm": "ECMR",
+  "config": {
+    "hours": 24,
+    "vms_per_hour": 10,
+    "total_vms": 240
+  }
+}

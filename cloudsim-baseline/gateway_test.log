@@ -1,0 +1,157 @@
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - ECMR Enhanced - Py4J Gateway Server
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Server Models: Huawei RH2285 V2, RH2288H V3, Lenovo SR655 V3
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - VM Types: small, medium, large, xlarge
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - ================================================================================
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Enhanced Py4J Gateway Server started on port 25333
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Python can connect using: gateway = JavaGateway()
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - 
+Gateway running. Python can now connect.
+[main] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Press Ctrl+C to stop.
+
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Initializing simulation
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Initializing Enhanced CloudSim Plus simulation
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - EcmrDatacenterBroker initialized with ECMR-enforced placement
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Enhanced CloudSim initialized with heterogeneous server infrastructure
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_ITALY (40 servers/type, PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_ITALY with 40 servers per type (PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_ITALY created with 120 heterogeneous hosts (PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_FRANCE (40 servers/type, PUE: 1.15)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_FRANCE with 40 servers per type (PUE: 1.15)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_FRANCE created with 120 heterogeneous hosts (PUE: 1.15)
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_SWEDEN (40 servers/type, PUE: 1.1)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_SWEDEN with 40 servers per type (PUE: 1.1)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_SWEDEN created with 120 heterogeneous hosts (PUE: 1.1)
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_NETHERLANDS (40 servers/type, PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_NETHERLANDS with 40 servers per type (PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_NETHERLANDS created with 120 heterogeneous hosts (PUE: 1.2)
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_SPAIN (40 servers/type, PUE: 1.25)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_SPAIN with 40 servers per type (PUE: 1.25)
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_SPAIN created with 120 heterogeneous hosts (PUE: 1.25)
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 0 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 1 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-2] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 2 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Running CloudSim simulation...
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Starting CloudSim simulation with 5 datacenters and 3 VMs
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Real-time utilization monitoring enabled (sampling every 3600.0 seconds)
+[Thread-2] INFO CloudSim - 
+================== Starting CloudSim Plus 8.5.1 ==================
+
+[Thread-2] INFO DatacenterBroker - Broker 1 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 2 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 3 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 4 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 5 is starting...
+[Thread-2] INFO Datacenter - 0.00: #Datacenter 6 is starting...
+[Thread-2] INFO CloudSim - Entities started.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: List of 5 datacenters(s) received.
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SWEDEN) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SWEDEN) inside #Datacenter 4
+[Thread-2] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SWEDEN) inside #Datacenter 4
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 0 (DC_SWEDEN) is booting up right away in Host 80/#DC 4, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 (DC_SWEDEN) has been allocated to Host 80/#DC 4
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 1 (DC_SWEDEN) is booting up right away in Host 81/#DC 4, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 (DC_SWEDEN) has been allocated to Host 81/#DC 4
+[Thread-2] INFO Host - 0.00: HostSimple: Vm 2 (DC_SWEDEN) is booting up right away in Host 82/#DC 4, since no startup delay (boot time) was set.
+[Thread-2] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 2 (DC_SWEDEN) has been allocated to Host 82/#DC 4
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 0 to Vm 0 (DC_SWEDEN) inside Host 80/#DC 4.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 1 to Vm 1 (DC_SWEDEN) inside Host 81/#DC 4.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 2 to Vm 2 (DC_SWEDEN) inside Host 82/#DC 4.
+[Thread-2] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: All 3 waiting Cloudlets submitted to some VM.
+[Thread-2] INFO DatacenterBroker - 40.11: EcmrDatacenterBroker1: Cloudlet 0 finished in Vm 0 (DC_SWEDEN) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.11: EcmrDatacenterBroker1: Cloudlet 1 finished in Vm 1 (DC_SWEDEN) and returned to broker.
+[Thread-2] INFO DatacenterBroker - 40.11: EcmrDatacenterBroker1: Cloudlet 2 finished in Vm 2 (DC_SWEDEN) and returned to broker.
+[Thread-2] INFO CloudSim - 40.22: Processing last events before simulation shutdown.
+[Thread-2] INFO DatacenterBroker - 40.22: EcmrDatacenterBroker1 is shutting down...
+[Thread-2] INFO Vm - 40.22: VmSimple: Requesting Vm 2 (DC_SWEDEN) destruction on Host 82/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 40.22: VmSimple: Requesting Vm 1 (DC_SWEDEN) destruction on Host 81/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Vm - 40.22: VmSimple: Requesting Vm 0 (DC_SWEDEN) destruction on Host 80/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-2] INFO Datacenter - 40.22: #Datacenter 4: Vm 2 (DC_SWEDEN) destroyed on Host 82/#DC 4. 
+[Thread-2] INFO Datacenter - 40.22: #Datacenter 4: Vm 1 (DC_SWEDEN) destroyed on Host 81/#DC 4. 
+[Thread-2] INFO Datacenter - 40.22: #Datacenter 4: Vm 0 (DC_SWEDEN) destroyed on Host 80/#DC 4. 
+[Thread-2] INFO CloudSim - Simulation: No more future events
+
+[Thread-2] INFO CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+[Thread-2] INFO Datacenter - 40.22: #Datacenter 3 is shutting down...
+[Thread-2] INFO Datacenter - 40.22: #Datacenter 5 is shutting down...
+[Thread-2] INFO CloudSim - 
+================== Simulation finished at time 40.22 ==================
+
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Simulation completed in 23.0 ms
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Collecting results from 3 finished cloudlets
+[Thread-2] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Simulation completed
+[Thread-2] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Results: 3 successful VMs, 0 failed VMs, {:.2f} kWh total energy (PUE-adjusted)
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Initializing simulation
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Initializing Enhanced CloudSim Plus simulation
+[Thread-3] INFO com.ecmr.baseline.EcmrDatacenterBroker - EcmrDatacenterBroker initialized with ECMR-enforced placement
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Enhanced CloudSim initialized with heterogeneous server infrastructure
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_ITALY (40 servers/type, PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_ITALY with 40 servers per type (PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_ITALY created with 120 heterogeneous hosts (PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_FRANCE (40 servers/type, PUE: 1.15)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_FRANCE with 40 servers per type (PUE: 1.15)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_FRANCE created with 120 heterogeneous hosts (PUE: 1.15)
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_SWEDEN (40 servers/type, PUE: 1.1)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_SWEDEN with 40 servers per type (PUE: 1.1)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_SWEDEN created with 120 heterogeneous hosts (PUE: 1.1)
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_NETHERLANDS (40 servers/type, PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_NETHERLANDS with 40 servers per type (PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_NETHERLANDS created with 120 heterogeneous hosts (PUE: 1.2)
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Creating heterogeneous datacenter: DC_SPAIN (40 servers/type, PUE: 1.25)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Creating heterogeneous datacenter: DC_SPAIN with 40 servers per type (PUE: 1.25)
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Datacenter DC_SPAIN created with 120 heterogeneous hosts (PUE: 1.25)
+[Thread-3] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 0 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-3] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 1 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-3] INFO com.ecmr.baseline.EcmrDatacenterBroker - VM 2 submitted with ECMR target datacenter: DC_SWEDEN
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Running CloudSim simulation...
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Starting CloudSim simulation with 5 datacenters and 3 VMs
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Real-time utilization monitoring enabled (sampling every 3600.0 seconds)
+[Thread-3] INFO CloudSim - 
+================== Starting CloudSim Plus 8.5.1 ==================
+
+[Thread-3] INFO DatacenterBroker - Broker 1 is starting...
+[Thread-3] INFO Datacenter - 0.00: #Datacenter 2 is starting...
+[Thread-3] INFO Datacenter - 0.00: #Datacenter 3 is starting...
+[Thread-3] INFO Datacenter - 0.00: #Datacenter 4 is starting...
+[Thread-3] INFO Datacenter - 0.00: #Datacenter 5 is starting...
+[Thread-3] INFO Datacenter - 0.00: #Datacenter 6 is starting...
+[Thread-3] INFO CloudSim - Entities started.
+[Thread-3] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: List of 5 datacenters(s) received.
+[Thread-3] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 0 (DC_SWEDEN) inside #Datacenter 4
+[Thread-3] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 1 (DC_SWEDEN) inside #Datacenter 4
+[Thread-3] INFO DatacenterBroker - 0.00: EcmrDatacenterBroker1: Trying to create Vm 2 (DC_SWEDEN) inside #Datacenter 4
+[Thread-3] INFO Host - 0.00: HostSimple: Vm 0 (DC_SWEDEN) is booting up right away in Host 80/#DC 4, since no startup delay (boot time) was set.
+[Thread-3] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 0 (DC_SWEDEN) has been allocated to Host 80/#DC 4
+[Thread-3] INFO Host - 0.00: HostSimple: Vm 1 (DC_SWEDEN) is booting up right away in Host 81/#DC 4, since no startup delay (boot time) was set.
+[Thread-3] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 1 (DC_SWEDEN) has been allocated to Host 81/#DC 4
+[Thread-3] INFO Host - 0.00: HostSimple: Vm 2 (DC_SWEDEN) is booting up right away in Host 82/#DC 4, since no startup delay (boot time) was set.
+[Thread-3] INFO VmAllocationPolicy - 0.00: VmAllocationPolicySimple: Vm 2 (DC_SWEDEN) has been allocated to Host 82/#DC 4
+[Thread-3] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 0 to Vm 0 (DC_SWEDEN) inside Host 80/#DC 4.
+[Thread-3] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 1 to Vm 1 (DC_SWEDEN) inside Host 81/#DC 4.
+[Thread-3] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: Sending Cloudlet 2 to Vm 2 (DC_SWEDEN) inside Host 82/#DC 4.
+[Thread-3] INFO DatacenterBroker - 0.10: EcmrDatacenterBroker1: All 3 waiting Cloudlets submitted to some VM.
+[Thread-3] INFO DatacenterBroker - 40.11: EcmrDatacenterBroker1: Cloudlet 1 finished in Vm 1 (DC_SWEDEN) and returned to broker.
+[Thread-3] INFO DatacenterBroker - 40.11: EcmrDatacenterBroker1: Cloudlet 2 finished in Vm 2 (DC_SWEDEN) and returned to broker.
+[Thread-3] INFO DatacenterBroker - 53.44: EcmrDatacenterBroker1: Cloudlet 0 finished in Vm 0 (DC_SWEDEN) and returned to broker.
+[Thread-3] INFO CloudSim - 53.55: Processing last events before simulation shutdown.
+[Thread-3] INFO DatacenterBroker - 53.55: EcmrDatacenterBroker1 is shutting down...
+[Thread-3] INFO Vm - 53.55: VmSimple: Requesting Vm 2 (DC_SWEDEN) destruction on Host 82/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-3] INFO Vm - 53.55: VmSimple: Requesting Vm 1 (DC_SWEDEN) destruction on Host 81/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-3] INFO Vm - 53.55: VmSimple: Requesting Vm 0 (DC_SWEDEN) destruction on Host 80/#DC 4. Shutdown will finish immediately (since no Vm shutDownDelay was set).
+[Thread-3] INFO Datacenter - 53.55: #Datacenter 4: Vm 2 (DC_SWEDEN) destroyed on Host 82/#DC 4. 
+[Thread-3] INFO Datacenter - 53.55: #Datacenter 4: Vm 1 (DC_SWEDEN) destroyed on Host 81/#DC 4. 
+[Thread-3] INFO Datacenter - 53.55: #Datacenter 4: Vm 0 (DC_SWEDEN) destroyed on Host 80/#DC 4. 
+[Thread-3] INFO CloudSim - Simulation: No more future events
+
+[Thread-3] INFO CloudInformationService - CloudInformationService0: Notify all CloudSim Plus entities to shutdown.
+
+[Thread-3] INFO Datacenter - 53.55: #Datacenter 3 is shutting down...
+[Thread-3] INFO Datacenter - 53.55: #Datacenter 5 is shutting down...
+[Thread-3] INFO CloudSim - 
+================== Simulation finished at time 53.55 ==================
+
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Simulation completed in 11.0 ms
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Collecting results from 3 finished cloudlets
+[Thread-3] INFO com.ecmr.baseline.Py4JGatewayEnhanced - Simulation completed
+[Thread-3] INFO com.ecmr.baseline.ECMRSimulationEnhanced - Results: 3 successful VMs, 0 failed VMs, {:.2f} kWh total energy (PUE-adjusted)

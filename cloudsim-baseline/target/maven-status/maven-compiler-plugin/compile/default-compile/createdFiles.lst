@@ -1,4 +1,9 @@
 org/example/SimpleTest.class
 com/ecmr/baseline/EcmrDatacenterBroker.class
+com/ecmr/baseline/Py4JGatewayEnhanced.class
 com/ecmr/baseline/ECMRSimulation.class
+com/ecmr/baseline/ECMRSimulationEnhanced.class
+com/ecmr/baseline/ServerPowerModel.class
+com/ecmr/baseline/ServerType.class
+com/ecmr/baseline/VMType.class
 com/ecmr/baseline/Py4JGateway.class

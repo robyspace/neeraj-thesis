@@ -1,0 +1,44 @@
+[
+  {
+    "base_solution": 0,
+    "target_objective": "Energy",
+    "objectives": [
+      6.617435786000014,
+      624.2888920512414,
+      14.041536549012998
+    ],
+    "preference": [
+      0.7,
+      0.15,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 0,
+    "target_objective": "Carbon",
+    "objectives": [
+      0.5488937739999991,
+      8.255362360959985,
+      5.0
+    ],
+    "preference": [
+      0.15,
+      0.7,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 0,
+    "target_objective": "Latency",
+    "objectives": [
+      1.643729177999997,
+      44.48917393174792,
+      9.394674425114589
+    ],
+    "preference": [
+      0.15,
+      0.15,
+      0.7
+    ]
+  }
+]

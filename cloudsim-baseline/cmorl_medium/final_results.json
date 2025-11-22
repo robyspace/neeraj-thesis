@@ -1,0 +1,73 @@
+{
+  "pareto_front_size": 4,
+  "hypervolume": 378.52906555963716,
+  "expected_utility": -2.877419886877644,
+  "solutions": [
+    {
+      "objectives": [
+        6.617927809999997,
+        30.111571535499987,
+        8.009029727877195
+      ],
+      "metadata": {
+        "policy_id": 1,
+        "preference": [
+          0.09784296501149996,
+          0.6276139633959614,
+          0.27454307159253855
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5488937739999991,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 3,
+        "preference": [
+          0.0200119501874526,
+          0.6726183177105184,
+          0.3073697321020289
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5488937739999991,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": "extended_2_Carbon",
+        "preference": [
+          0.15,
+          0.7,
+          0.15
+        ],
+        "stage": 2,
+        "base_solution": 1
+      }
+    },
+    {
+      "objectives": [
+        1.6430799796666675,
+        44.36151637102035,
+        5.477891653770325
+      ],
+      "metadata": {
+        "policy_id": "extended_2_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 1
+      }
+    }
+  ]
+}

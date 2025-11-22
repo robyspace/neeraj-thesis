@@ -1,0 +1,127 @@
+[
+  {
+    "policy_id": 1,
+    "preference": [
+      0.09784296501149996,
+      0.6276139633959614,
+      0.27454307159253855
+    ],
+    "objectives": [
+      0.5535851737777768,
+      0.0,
+      9.298613896967423
+    ],
+    "train_info": {
+      "total_timesteps": 5000,
+      "total_episodes": 500,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.298613896967423,
+        "failures": 0,
+        "total_placements": 10
+      },
+      "best_return": -0.27433186769485474
+    }
+  },
+  {
+    "policy_id": 2,
+    "preference": [
+      0.729092004503085,
+      0.13546540941426943,
+      0.1354425860826456
+    ],
+    "objectives": [
+      0.5535851737777768,
+      18.636444875228854,
+      20.435466565977627
+    ],
+    "train_info": {
+      "total_timesteps": 5000,
+      "total_episodes": 500,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 18.636444875228854,
+        "latency_ms": 20.435466565977627,
+        "failures": 0,
+        "total_placements": 10
+      },
+      "best_return": 1.3338346481323242
+    }
+  },
+  {
+    "policy_id": 3,
+    "preference": [
+      0.0200119501874526,
+      0.6726183177105184,
+      0.3073697321020289
+    ],
+    "objectives": [
+      0.5535851737777768,
+      0.0,
+      9.298613896967423
+    ],
+    "train_info": {
+      "total_timesteps": 5000,
+      "total_episodes": 500,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.298613896967423,
+        "failures": 0,
+        "total_placements": 10
+      },
+      "best_return": 0.020948052406311035
+    }
+  },
+  {
+    "policy_id": 4,
+    "preference": [
+      0.25890493093112465,
+      0.004373639091215078,
+      0.7367214299776603
+    ],
+    "objectives": [
+      0.5535851737777768,
+      127.05886908547534,
+      11.395659831762815
+    ],
+    "train_info": {
+      "total_timesteps": 5000,
+      "total_episodes": 500,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 127.05886908547534,
+        "latency_ms": 11.395659831762815,
+        "failures": 0,
+        "total_placements": 10
+      },
+      "best_return": -1.1288540363311768
+    }
+  },
+  {
+    "policy_id": 5,
+    "preference": [
+      0.8026024923499441,
+      0.10723696528112109,
+      0.09016054236893489
+    ],
+    "objectives": [
+      0.5535851737777768,
+      18.636444875228854,
+      20.435466565977627
+    ],
+    "train_info": {
+      "total_timesteps": 5000,
+      "total_episodes": 500,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 18.636444875228854,
+        "latency_ms": 20.435466565977627,
+        "failures": 0,
+        "total_placements": 10
+      },
+      "best_return": 1.695518970489502
+    }
+  }
+]

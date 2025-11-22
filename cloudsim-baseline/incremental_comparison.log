@@ -1,0 +1,24 @@
+================================================================================
+ECMR vs C-MORL COMPARISON
+================================================================================
+Configuration: 2 hours × 5 VMs/hour
+Output: test_dc_types_comparison/
+
+================================================================================
+RUNNING ECMR BASELINE
+================================================================================
+✓ ECMR completed in 0.4s
+✓ Results saved to test_dc_types_comparison/ecmr/
+
+================================================================================
+RUNNING C-MORL
+================================================================================
+✓ C-MORL completed in 26.6s
+✓ Results saved to test_dc_types_comparison/cmorl/
+
+✓ Comparison report saved to test_dc_types_comparison/comparison.md
+
+================================================================================
+✓ COMPARISON COMPLETE
+================================================================================
+Results saved to test_dc_types_comparison/

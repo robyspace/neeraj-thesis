@@ -1,0 +1,65 @@
+INFO:__main__:================================================================================
+INFO:__main__:C-MORL TRAINING
+INFO:__main__:================================================================================
+INFO:__main__:Configuration:
+INFO:__main__:  Output dir: cmorl_retrain_dc_types
+INFO:__main__:  Episode: 2 hours × 5 VMs/hour
+INFO:__main__:  Stage 1: 5 policies × 5000 timesteps
+INFO:__main__:  Stage 2: 3 extensions
+INFO:__main__:  Random seed: 42
+INFO:__main__:Initialized C-MORL Trainer
+INFO:__main__:Output directory: cmorl_retrain_dc_types
+INFO:__main__:================================================================================
+INFO:__main__:STAGE 1: PARETO INITIALIZATION
+INFO:__main__:================================================================================
+INFO:__main__:Training 5 policies with 5000 timesteps each
+INFO:pareto_utils:Sampled 5 preference vectors:
+INFO:pareto_utils:  Preference 1: [0.09784297 0.62761396 0.27454307]
+INFO:pareto_utils:  Preference 2: [0.729092   0.13546541 0.13544259]
+INFO:pareto_utils:  Preference 3: [0.02001195 0.67261832 0.30736973]
+INFO:pareto_utils:  Preference 4: [0.25890493 0.00437364 0.73672143]
+INFO:pareto_utils:  Preference 5: [0.80260249 0.10723697 0.09016054]
+INFO:__main__:
+--- Training Policy 1/5 ---
+INFO:__main__:Preference: [0.09784297 0.62761396 0.27454307]
+INFO:cmorl_environment:Loading carbon data from output/synchronized_dataset_2024.csv
+INFO:cmorl_environment:Loaded 8784 hourly records
+INFO:cmorl_environment:Connecting to CloudSim gateway...
+INFO:cmorl_environment:Connected to CloudSim
+INFO:cmorl_environment:C-MORL Environment initialized
+INFO:cmorl_agent:Initialized C-MORL agent with preference [0.09784297 0.62761396 0.27454307]
+INFO:__main__:Training policy with preference [0.09784296 0.62761396 0.27454308]
+INFO:__main__:Target timesteps: 5000
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+Traceback (most recent call last):
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/train_cmorl.py", line 514, in <module>
+    main()
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/train_cmorl.py", line 494, in main
+    stage1_results = trainer.stage1_pareto_initialization(
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/train_cmorl.py", line 275, in stage1_pareto_initialization
+    train_info = self.train_policy(
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/train_cmorl.py", line 180, in train_policy
+    trajectory = self.collect_trajectory(env, agent)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/train_cmorl.py", line 97, in collect_trajectory
+    action, log_prob = agent.select_action(state, deterministic=False)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/cmorl_agent.py", line 160, in select_action
+    action, log_prob = self.policy.get_action(state_tensor, deterministic)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/cmorl_agent.py", line 77, in get_action
+    logits = self.forward(state)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/cmorl_agent.py", line 68, in forward
+    return self.network(state)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/robyspace/Documents/GitHub/neeraj-thesis/cloudsim-baseline/venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x132 and 127x256)

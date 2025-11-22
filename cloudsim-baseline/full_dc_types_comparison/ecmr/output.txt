@@ -1,0 +1,295 @@
+================================================================================
+ECMR + HETEROGENEOUS CLOUDSIM INTEGRATION
+================================================================================
+
+[1/6] Loading carbon intensity data...
+      Loaded 8784 hourly records
+
+[2/6] Connecting to Java gateway...
+      ✓ Connected to Py4JGatewayEnhanced
+
+[3/6] Initializing CloudSim simulation...
+      ✓ CloudSim initialized
+
+[4/6] Creating heterogeneous datacenters...
+      Each datacenter: 40 servers of each type (120 total)
+      - 40 × Huawei RH2285 V2 (16 cores, 24GB, 2.3GHz)
+      - 40 × Huawei RH2288H V3 (40 cores, 64GB, 3.6GHz)
+      - 40 × Lenovo SR655 V3 (96 cores, 192GB, 2.4GHz)
+
+      ✓ DC_ITALY: Milan DC (PUE 1.2)
+      ✓ DC_FRANCE: Paris DC (PUE 1.15)
+      ✓ DC_SWEDEN: Stockholm DC (PUE 1.1)
+      ✓ DC_NETHERLANDS: Amsterdam DC (PUE 1.2)
+      ✓ DC_SPAIN: Madrid DC (PUE 1.25)
+
+[5/6] Running simulation (24 hours, 10 VMs/hour)...
+      Using random user locations across 20 European cities
+
+  Hour 1/24 (2024-01-01 00:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '232', 'DC_FRANCE': '15', 'DC_SWEDEN': '33', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '94'}
+    Renewable: {'DC_ITALY': '43.1%', 'DC_FRANCE': '35.1%', 'DC_SWEDEN': '65.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '43.6%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 2/24 (2024-01-01 01:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '227', 'DC_FRANCE': '15', 'DC_SWEDEN': '34', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '94'}
+    Renewable: {'DC_ITALY': '45.0%', 'DC_FRANCE': '34.7%', 'DC_SWEDEN': '65.0%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '42.3%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 3/24 (2024-01-01 02:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '226', 'DC_FRANCE': '17', 'DC_SWEDEN': '34', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '99'}
+    Renewable: {'DC_ITALY': '45.1%', 'DC_FRANCE': '29.1%', 'DC_SWEDEN': '64.1%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '39.8%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 4/24 (2024-01-01 03:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '224', 'DC_FRANCE': '18', 'DC_SWEDEN': '35', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '99'}
+    Renewable: {'DC_ITALY': '45.4%', 'DC_FRANCE': '28.4%', 'DC_SWEDEN': '63.3%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '39.2%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 5/24 (2024-01-01 04:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '223', 'DC_FRANCE': '18', 'DC_SWEDEN': '35', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '103'}
+    Renewable: {'DC_ITALY': '46.0%', 'DC_FRANCE': '28.2%', 'DC_SWEDEN': '62.9%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '38.1%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 6/24 (2024-01-01 05:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '225', 'DC_FRANCE': '18', 'DC_SWEDEN': '35', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '103'}
+    Renewable: {'DC_ITALY': '45.6%', 'DC_FRANCE': '27.4%', 'DC_SWEDEN': '64.2%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '38.1%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 7/24 (2024-01-01 06:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '226', 'DC_FRANCE': '19', 'DC_SWEDEN': '34', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '99'}
+    Renewable: {'DC_ITALY': '46.4%', 'DC_FRANCE': '27.5%', 'DC_SWEDEN': '65.0%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '39.6%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 8/24 (2024-01-01 07:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '210', 'DC_FRANCE': '18', 'DC_SWEDEN': '33', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '97'}
+    Renewable: {'DC_ITALY': '50.1%', 'DC_FRANCE': '31.8%', 'DC_SWEDEN': '65.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '40.8%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 9/24 (2024-01-01 08:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '200', 'DC_FRANCE': '17', 'DC_SWEDEN': '33', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '97'}
+    Renewable: {'DC_ITALY': '53.1%', 'DC_FRANCE': '32.9%', 'DC_SWEDEN': '66.8%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '42.3%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 10/24 (2024-01-01 09:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '182', 'DC_FRANCE': '16', 'DC_SWEDEN': '30', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '77'}
+    Renewable: {'DC_ITALY': '56.4%', 'DC_FRANCE': '33.4%', 'DC_SWEDEN': '67.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '49.1%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 11/24 (2024-01-01 10:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '184', 'DC_FRANCE': '16', 'DC_SWEDEN': '27', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '61'}
+    Renewable: {'DC_ITALY': '56.0%', 'DC_FRANCE': '34.6%', 'DC_SWEDEN': '68.4%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '56.5%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 12/24 (2024-01-01 11:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '194', 'DC_FRANCE': '15', 'DC_SWEDEN': '21', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '54'}
+    Renewable: {'DC_ITALY': '53.8%', 'DC_FRANCE': '35.3%', 'DC_SWEDEN': '68.8%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '61.0%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 13/24 (2024-01-01 12:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '208', 'DC_FRANCE': '15', 'DC_SWEDEN': '24', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '50'}
+    Renewable: {'DC_ITALY': '50.1%', 'DC_FRANCE': '35.4%', 'DC_SWEDEN': '69.0%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '62.6%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 14/24 (2024-01-01 13:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '216', 'DC_FRANCE': '15', 'DC_SWEDEN': '12', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '52'}
+    Renewable: {'DC_ITALY': '46.2%', 'DC_FRANCE': '34.3%', 'DC_SWEDEN': '70.3%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '64.5%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 15/24 (2024-01-01 14:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '240', 'DC_FRANCE': '16', 'DC_SWEDEN': '7', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '52'}
+    Renewable: {'DC_ITALY': '40.6%', 'DC_FRANCE': '33.1%', 'DC_SWEDEN': '71.5%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '66.2%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 16/24 (2024-01-01 15:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '260', 'DC_FRANCE': '15', 'DC_SWEDEN': '9', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '54'}
+    Renewable: {'DC_ITALY': '36.9%', 'DC_FRANCE': '31.6%', 'DC_SWEDEN': '71.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '63.3%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 17/24 (2024-01-01 16:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '259', 'DC_FRANCE': '15', 'DC_SWEDEN': '7', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '72'}
+    Renewable: {'DC_ITALY': '40.4%', 'DC_FRANCE': '31.1%', 'DC_SWEDEN': '71.5%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '52.5%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 18/24 (2024-01-01 17:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '259', 'DC_FRANCE': '15', 'DC_SWEDEN': '9', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '75'}
+    Renewable: {'DC_ITALY': '41.8%', 'DC_FRANCE': '33.4%', 'DC_SWEDEN': '71.8%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '52.0%'}
+    Placements: DC_SWEDEN: 10
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 19/24 (2024-01-01 18:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '259', 'DC_FRANCE': '15', 'DC_SWEDEN': '9', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '70'}
+    Renewable: {'DC_ITALY': '41.6%', 'DC_FRANCE': '35.0%', 'DC_SWEDEN': '72.1%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '56.7%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 20/24 (2024-01-01 19:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '261', 'DC_FRANCE': '15', 'DC_SWEDEN': '9', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '67'}
+    Renewable: {'DC_ITALY': '40.3%', 'DC_FRANCE': '35.7%', 'DC_SWEDEN': '71.4%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '58.4%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 21/24 (2024-01-01 20:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '264', 'DC_FRANCE': '14', 'DC_SWEDEN': '25', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '70'}
+    Renewable: {'DC_ITALY': '38.6%', 'DC_FRANCE': '35.2%', 'DC_SWEDEN': '69.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '57.9%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 22/24 (2024-01-01 21:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '268', 'DC_FRANCE': '14', 'DC_SWEDEN': '24', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '67'}
+    Renewable: {'DC_ITALY': '35.5%', 'DC_FRANCE': '35.3%', 'DC_SWEDEN': '68.7%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '56.9%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  Hour 23/24 (2024-01-01 22:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '264', 'DC_FRANCE': '13', 'DC_SWEDEN': '34', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '69'}
+    Renewable: {'DC_ITALY': '36.6%', 'DC_FRANCE': '35.1%', 'DC_SWEDEN': '66.2%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '53.7%'}
+    Placements: DC_SWEDEN: 9, DC_SPAIN: 1
+    User cities: Vienna, Stockholm, Brussels, Copenhagen, Berlin ...
+
+  Hour 24/24 (2024-01-01 23:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '243', 'DC_FRANCE': '14', 'DC_SWEDEN': '35', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '69'}
+    Renewable: {'DC_ITALY': '40.2%', 'DC_FRANCE': '35.5%', 'DC_SWEDEN': '65.4%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '51.4%'}
+    Placements: DC_SWEDEN: 8, DC_SPAIN: 2
+    User cities: Budapest, Dublin, Warsaw, Prague, Athens ...
+
+  ✓ Placed 240 VMs across 24 hours
+  ✓ Used 20 unique user locations
+
+[6/6] Running CloudSim simulation...
+      ✓ Simulation completed in 0.06s
+
+================================================================================
+SIMULATION RESULTS
+================================================================================
+
+📊 OVERALL STATISTICS
+--------------------------------------------------------------------------------
+  Total IT Energy: 22.6191 kWh
+  Total Facility Energy (PUE-adjusted): 26.6906 kWh
+  Average PUE: 1.18
+  Total VMs Requested: 240
+  Successful VMs: 240
+  Failed VMs: 0
+  Success Rate: 100.0%
+
+🌍 CARBON & RENEWABLE METRICS
+--------------------------------------------------------------------------------
+  Total Carbon Emissions: 1.9582 kg CO2
+  Weighted Avg Carbon Intensity: 37.6 gCO2/kWh
+  Weighted Avg Renewable %: 64.4%
+  VM Carbon Intensity: avg=27.6, min=6.8, max=70.1 gCO2/kWh
+
+🌱 M5: GREEN DATACENTER UTILIZATION
+--------------------------------------------------------------------------------
+  Green Datacenter (DG) VMs: 240 (100.00%)
+  Brown Datacenter (DB) VMs: 0 (0.00%)
+  ➜ Green DC Utilization Score: 1.000/1.000
+  Green: ██████████████████████████████████████████████████
+  Brown: 
+
+🏢 PER-DATACENTER STATISTICS
+--------------------------------------------------------------------------------
+  DC_ITALY (Milan DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 4.5238 kWh | Total (PUE 1.2): 5.4286 kWh
+    Carbon: 243 gCO2/kWh | Emissions: 1.3213 kg CO2
+    Renewable: 40.2% (Hydro: 2770.0 MW, Solar: 0.0 MW, Wind: 3241.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_FRANCE (Paris DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 4.5238 kWh | Total (PUE 1.15): 5.2024 kWh
+    Carbon: 14 gCO2/kWh | Emissions: 0.0715 kg CO2
+    Renewable: 35.5% (Hydro: 6826.0 MW, Solar: 0.0 MW, Wind: 16280.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_SWEDEN (Stockholm DC):
+    VMs: 222 (92.5% of total)
+    IT Energy: 4.5238 kWh | Total (PUE 1.1): 4.9762 kWh
+    Carbon: 35 gCO2/kWh | Emissions: 0.1741 kg CO2
+    Renewable: 65.4% (Hydro: 6685.0 MW, Solar: 0.0 MW, Wind: 4658.0 MW)
+    Utilization: CPU 891.4%, RAM 967.9%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_NETHERLANDS (Amsterdam DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 4.5238 kWh | Total (PUE 1.2): 5.4286 kWh
+    Carbon: 0 gCO2/kWh | Emissions: 0.0000 kg CO2
+    Renewable: 0.0% (Hydro: 0.0 MW, Solar: 0.0 MW, Wind: 0.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_SPAIN (Madrid DC):
+    VMs: 18 (7.5% of total)
+    IT Energy: 4.5238 kWh | Total (PUE 1.25): 5.6548 kWh
+    Carbon: 69 gCO2/kWh | Emissions: 0.3913 kg CO2
+    Renewable: 51.4% (Hydro: 4004.0 MW, Solar: 60.0 MW, Wind: 9380.0 MW)
+    Utilization: CPU 57.6%, RAM 62.5%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+📦 VM TYPE DISTRIBUTION
+--------------------------------------------------------------------------------
+  small   :  115 ( 47.9%) ███████████████████████
+  medium  :   61 ( 25.4%) ████████████
+  large   :   43 ( 17.9%) ████████
+  xlarge  :   21 (  8.8%) ████
+
+🎯 DATACENTER SELECTION DISTRIBUTION
+--------------------------------------------------------------------------------
+  DC_ITALY       :    0 (  0.0%) 
+  DC_FRANCE      :    0 (  0.0%) 
+  DC_SWEDEN      :  222 ( 92.5%) ██████████████████████████████████████████████
+  DC_NETHERLANDS :    0 (  0.0%) 
+  DC_SPAIN       :   18 (  7.5%) ███
+
+🌐 USER LOCATION ANALYSIS
+--------------------------------------------------------------------------------
+  Unique User Cities: 20
+  Top 5 Cities:
+    Paris: 12 VMs (5.0%)
+    London: 12 VMs (5.0%)
+    Zurich: 12 VMs (5.0%)
+    Dublin: 12 VMs (5.0%)
+    Athens: 12 VMs (5.0%)
+
+⏰ HOURLY ANALYSIS
+--------------------------------------------------------------------------------
+  Hours Simulated: 24
+  Avg Carbon per Hour: 27.6 gCO2/kWh
+  Avg Renewable per Hour: 67.0%
+  Best Hour (lowest carbon): Hour 17 (6.8 gCO2/kWh)
+  Worst Hour (highest carbon): Hour 24 (41.8 gCO2/kWh)
+
+🎯 ECMR ALGORITHM EFFECTIVENESS
+--------------------------------------------------------------------------------
+  Actual Avg Carbon: 27.6 gCO2/kWh
+  Random Placement: 72.3 gCO2/kWh
+  Worst Case: 243.4 gCO2/kWh
+  Improvement vs Random: 61.8% (44.7 gCO2/kWh saved)
+  Improvement vs Worst: 88.7% (215.8 gCO2/kWh saved)
+
+================================================================================
+✓ SIMULATION COMPLETED SUCCESSFULLY
+================================================================================
+
+Shutting down gateway...

@@ -1,0 +1,86 @@
+[
+  {
+    "base_solution": 0,
+    "target_objective": "Energy",
+    "objectives": [
+      0.5535851737777768,
+      18.636444875228854,
+      20.435466565977627
+    ],
+    "preference": [
+      0.7,
+      0.15,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 0,
+    "target_objective": "Carbon",
+    "objectives": [
+      6.674987524888896,
+      179.77076402030775,
+      18.208096032175586
+    ],
+    "preference": [
+      0.15,
+      0.7,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 0,
+    "target_objective": "Latency",
+    "objectives": [
+      6.674987524888896,
+      385.27360494906213,
+      18.472848928179786
+    ],
+    "preference": [
+      0.15,
+      0.15,
+      0.7
+    ]
+  },
+  {
+    "base_solution": 1,
+    "target_objective": "Energy",
+    "objectives": [
+      1.657054477555553,
+      90.10233721708322,
+      10.26446123574151
+    ],
+    "preference": [
+      0.7,
+      0.15,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 1,
+    "target_objective": "Carbon",
+    "objectives": [
+      0.5535851737777768,
+      18.636444875228854,
+      20.435466565977627
+    ],
+    "preference": [
+      0.15,
+      0.7,
+      0.15
+    ]
+  },
+  {
+    "base_solution": 1,
+    "target_objective": "Latency",
+    "objectives": [
+      0.5535851737777768,
+      8.325921013617762,
+      5.0
+    ],
+    "preference": [
+      0.15,
+      0.15,
+      0.7
+    ]
+  }
+]
