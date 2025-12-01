@@ -86,6 +86,10 @@ class DatacenterState:
     energy_kwh: float = 0.0
     carbon_kg: float = 0.0
 
+    # Capacity tracking (NEW)
+    max_vms: int = 120  # Each DC has 120 servers, ~1 VM per server for simplicity
+    current_load: int = 0  # Current number of VMs placed
+
 
 class ECMRHeterogeneousScheduler:
     """
@@ -141,7 +145,7 @@ class ECMRHeterogeneousScheduler:
             return 0.5
         return (value - min_val) / (max_val - min_val)
 
-    def select_datacenter(self, vm: Dict) -> str:
+    def select_datacenter(self, vm: Dict, return_ranked: bool = False) -> any:
         """
         ECMR Algorithm: Select optimal datacenter for VM placement
 
@@ -153,7 +157,13 @@ class ECMRHeterogeneousScheduler:
         - S_renewable: Higher renewable % is better (normalized)
         - S_latency: Lower latency is better (inverse normalized)
 
-        Returns: Selected datacenter ID
+        Args:
+            vm: VM to place
+            return_ranked: If True, return all DCs sorted by score (for fallback)
+
+        Returns:
+            If return_ranked=False: Selected datacenter ID (str)
+            If return_ranked=True: List of (dc_id, score_dict) tuples sorted by score
         """
 
         if not self.datacenters:
@@ -185,11 +195,15 @@ class ECMRHeterogeneousScheduler:
             # Brown (DB) datacenters have higher carbon, so we reduce their score
             dc_type_multiplier = 0.7 if dc.dc_type == 'DB' else 1.0  # 30% penalty for brown
 
-            # Weighted score (with brown datacenter penalty)
+            # Capacity penalty: Penalize DCs near capacity
+            capacity_used_pct = dc.current_load / dc.max_vms if dc.max_vms > 0 else 0
+            capacity_penalty = 1.0 if capacity_used_pct < 0.9 else 0.5  # 50% penalty if >90% full
+
+            # Weighted score (with brown datacenter penalty and capacity penalty)
             base_score = (self.w_carbon * s_carbon +
                          self.w_renewable * s_renewable +
                          self.w_latency * s_latency)
-            score = base_score * dc_type_multiplier
+            score = base_score * dc_type_multiplier * capacity_penalty
 
             scores[dc_id] = {
                 'score': score,
@@ -197,16 +211,22 @@ class ECMRHeterogeneousScheduler:
                 'renewable_pct': dc.renewable_pct,
                 'dc_type': dc.dc_type,
                 'latency_ms': latency,
+                'capacity_pct': capacity_used_pct * 100,
+                'current_load': dc.current_load,
                 's_carbon': s_carbon,
                 's_renewable': s_renewable,
                 's_latency': s_latency,
-                'dc_type_multiplier': dc_type_multiplier
+                'dc_type_multiplier': dc_type_multiplier,
+                'capacity_penalty': capacity_penalty
             }
 
-        # Select datacenter with highest score
-        best_dc = max(scores.items(), key=lambda x: x[1]['score'])
-
-        return best_dc[0]
+        if return_ranked:
+            # Return all DCs sorted by score (best first)
+            return sorted(scores.items(), key=lambda x: x[1]['score'], reverse=True)
+        else:
+            # Select datacenter with highest score
+            best_dc = max(scores.items(), key=lambda x: x[1]['score'])
+            return best_dc[0]
 
 
 class ECMRHeterogeneousIntegration:
@@ -314,6 +334,36 @@ class ECMRHeterogeneousIntegration:
         vm_type = np.random.choice(VM_TYPES, p=VM_TYPE_WEIGHTS)
         return {'vm_id': vm_id, 'type': vm_type}
 
+    def seed_initial_vms(self, seed_count_per_dc: int = 10) -> int:
+        """
+        Seed initial VMs across all datacenters for realistic baseline load
+
+        Args:
+            seed_count_per_dc: Number of VMs to place in each datacenter initially
+
+        Returns:
+            Next available VM ID
+        """
+        print(f"      Seeding {seed_count_per_dc} VMs per datacenter for baseline load...")
+
+        vm_id = 0
+        total_seeded = 0
+
+        for dc_id in self.datacenters.keys():
+            for i in range(seed_count_per_dc):
+                vm = self.generate_vm(vm_id)
+                success = self.app.submitVMByType(vm_id, vm['type'], dc_id)
+
+                if success:
+                    self.datacenters[dc_id].vms_placed += 1
+                    self.datacenters[dc_id].current_load += 1
+                    total_seeded += 1
+
+                vm_id += 1
+
+        print(f"      ✓ Seeded {total_seeded} VMs across {len(self.datacenters)} datacenters")
+        return vm_id
+
     def run_simulation(self, hours: int = 24, vms_per_hour: int = 10):
         """
         Run ECMR simulation for specified hours with random user locations
@@ -326,7 +376,9 @@ class ECMRHeterogeneousIntegration:
         print(f"      Using random user locations across {len(EUROPEAN_CITIES)} European cities")
         print()
 
-        vm_id = 0
+        # Seed initial VMs across all datacenters for realistic baseline
+        vm_id = self.seed_initial_vms(seed_count_per_dc=10)
+        print()
         hour_carbon_totals = []
 
         for hour in range(min(hours, len(self.df))):
@@ -362,29 +414,45 @@ class ECMRHeterogeneousIntegration:
                 # Update scheduler with new user location
                 self.scheduler.user_location = (user_lat, user_lon)
 
-                # ECMR algorithm selects datacenter based on this user's location
-                selected_dc = self.scheduler.select_datacenter(vm)
+                # ECMR algorithm: Get ranked list of datacenters (best to worst)
+                ranked_dcs = self.scheduler.select_datacenter(vm, return_ranked=True)
 
-                # Submit VM to CloudSim
-                success = self.app.submitVMByType(vm_id, vm['type'], selected_dc)
+                # Try datacenters in order of preference until one succeeds
+                success = False
+                selected_dc = None
 
-                if success:
-                    self.datacenters[selected_dc].vms_placed += 1
-                    placements[selected_dc] = placements.get(selected_dc, 0) + 1
+                for dc_id, score_info in ranked_dcs:
+                    # Skip if datacenter is at/over capacity
+                    if self.datacenters[dc_id].current_load >= self.datacenters[dc_id].max_vms:
+                        continue
 
-                    self.placement_decisions.append({
-                        'hour': hour,
-                        'vm_id': vm_id,
-                        'vm_type': vm['type'],
-                        'datacenter': selected_dc,
-                        'user_city': city_name,
-                        'user_lat': user_lat,
-                        'user_lon': user_lon,
-                        'carbon_intensity': self.datacenters[selected_dc].carbon_intensity,
-                        'renewable_pct': self.datacenters[selected_dc].renewable_pct,
-                        'dc_type': self.datacenters[selected_dc].dc_type,
-                        'timestamp': timestamp
-                    })
+                    # Try to place VM
+                    success = self.app.submitVMByType(vm_id, vm['type'], dc_id)
+
+                    if success:
+                        selected_dc = dc_id
+                        self.datacenters[dc_id].vms_placed += 1
+                        self.datacenters[dc_id].current_load += 1
+                        placements[dc_id] = placements.get(dc_id, 0) + 1
+
+                        self.placement_decisions.append({
+                            'hour': hour,
+                            'vm_id': vm_id,
+                            'vm_type': vm['type'],
+                            'datacenter': dc_id,
+                            'user_city': city_name,
+                            'user_lat': user_lat,
+                            'user_lon': user_lon,
+                            'carbon_intensity': self.datacenters[dc_id].carbon_intensity,
+                            'renewable_pct': self.datacenters[dc_id].renewable_pct,
+                            'dc_type': self.datacenters[dc_id].dc_type,
+                            'timestamp': timestamp,
+                            'fallback_rank': ranked_dcs.index((dc_id, score_info)) + 1  # 1-indexed rank
+                        })
+                        break  # Successfully placed, move to next VM
+
+                if not success:
+                    print(f"      ⚠️  Failed to place VM {vm_id} - all datacenters at capacity!")
 
                 vm_id += 1
 
@@ -426,7 +494,7 @@ class ECMRHeterogeneousIntegration:
         placements_df = pd.DataFrame(self.placement_decisions)
 
         # === SECTION 1: Overall Statistics ===
-        print("📊 OVERALL STATISTICS")
+        print(" OVERALL STATISTICS")
         print("-" * 80)
         print(f"  Total IT Energy: {results.get('totalITEnergyKWh') or 0:.4f} kWh")
         print(f"  Total Facility Energy (PUE-adjusted): {results.get('totalEnergyKWh') or 0:.4f} kWh")
@@ -439,7 +507,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 2: Carbon Metrics ===
-        print("🌍 CARBON & RENEWABLE METRICS")
+        print(" CARBON & RENEWABLE METRICS")
         print("-" * 80)
 
         total_carbon = 0
@@ -497,7 +565,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 3: Per-Datacenter Details ===
-        print("🏢 PER-DATACENTER STATISTICS")
+        print("PER-DATACENTER STATISTICS")
         print("-" * 80)
 
         for dc_id, dc, dc_energy, dc_carbon, stats in dc_carbon_details:
@@ -519,7 +587,7 @@ class ECMRHeterogeneousIntegration:
             print()
 
         # === SECTION 4: VM Distribution ===
-        print("📦 VM TYPE DISTRIBUTION")
+        print(" VM TYPE DISTRIBUTION")
         print("-" * 80)
         if not placements_df.empty:
             type_counts = placements_df['vm_type'].value_counts()
@@ -531,7 +599,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 5: Datacenter Selection ===
-        print("🎯 DATACENTER SELECTION DISTRIBUTION")
+        print(" DATACENTER SELECTION DISTRIBUTION")
         print("-" * 80)
         if not placements_df.empty:
             dc_counts = placements_df['datacenter'].value_counts()
@@ -543,7 +611,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 6: User Location Analysis ===
-        print("🌐 USER LOCATION ANALYSIS")
+        print(" USER LOCATION ANALYSIS")
         print("-" * 80)
         if not placements_df.empty and 'user_city' in placements_df.columns:
             unique_cities = placements_df['user_city'].nunique()
@@ -556,7 +624,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 7: Time-based Analysis ===
-        print("⏰ HOURLY ANALYSIS")
+        print(" HOURLY ANALYSIS")
         print("-" * 80)
         if not placements_df.empty:
             hourly_carbon = placements_df.groupby('hour')['carbon_intensity'].mean()
@@ -570,7 +638,7 @@ class ECMRHeterogeneousIntegration:
         print()
 
         # === SECTION 8: ECMR Algorithm Effectiveness ===
-        print("🎯 ECMR ALGORITHM EFFECTIVENESS")
+        print(" ECMR ALGORITHM EFFECTIVENESS")
         print("-" * 80)
         if not placements_df.empty:
             # Compare actual placement vs random/worst-case
@@ -620,7 +688,7 @@ def main():
         integration.print_results()
 
     except Exception as e:
-        print(f"\n❌ ERROR: {e}")
+        print(f"\n ERROR: {e}")
         import traceback
         traceback.print_exc()
     finally:

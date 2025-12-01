@@ -1,0 +1,77 @@
+[
+  {
+    "policy_id": 1,
+    "preference": [
+      0.09784296501149996,
+      0.6276139633959614,
+      0.27454307159253855
+    ],
+    "objectives": [
+      26.69056309466664,
+      458.7507258303562,
+      13.17827252829958
+    ],
+    "train_info": {
+      "total_timesteps": 20160,
+      "total_episodes": 84,
+      "final_metrics": {
+        "energy_kwh": 26.69056309466664,
+        "carbon_gco2": 458.7507258303562,
+        "latency_ms": 13.17827252829958,
+        "failures": 0,
+        "total_placements": 240
+      },
+      "best_return": -10.348287582397461
+    }
+  },
+  {
+    "policy_id": 2,
+    "preference": [
+      0.729092004503085,
+      0.13546540941426943,
+      0.1354425860826456
+    ],
+    "objectives": [
+      26.69056309466664,
+      1278.34451941906,
+      17.982194518730285
+    ],
+    "train_info": {
+      "total_timesteps": 20160,
+      "total_episodes": 84,
+      "final_metrics": {
+        "energy_kwh": 26.69056309466664,
+        "carbon_gco2": 1278.34451941906,
+        "latency_ms": 17.982194518730285,
+        "failures": 0,
+        "total_placements": 240
+      },
+      "best_return": 26.611989974975586
+    }
+  },
+  {
+    "policy_id": 3,
+    "preference": [
+      0.0200119501874526,
+      0.6726183177105184,
+      0.3073697321020289
+    ],
+    "objectives": [
+      26.69056309466664,
+      383.39881778693,
+      8.617477722039666
+    ],
+    "train_info": {
+      "total_timesteps": 20160,
+      "total_episodes": 84,
+      "final_metrics": {
+        "energy_kwh": 26.69056309466664,
+        "carbon_gco2": 383.39881778693,
+        "latency_ms": 8.617477722039666,
+        "failures": 0,
+        "total_placements": 240
+      },
+      "best_return": -6.357860565185547
+    }
+  }
+]

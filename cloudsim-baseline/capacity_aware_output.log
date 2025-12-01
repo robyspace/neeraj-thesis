@@ -1,0 +1,71 @@
+==================================================
+CAPACITY-AWARE ECMR vs C-MORL COMPARISON
+==================================================
+Configuration:
+  State dimensions: 137 (127 + 5 DC type + 5 DC capacity)
+  Hours: 24
+  VMs per hour: 10
+  Total VMs per episode: 240
+  C-MORL timesteps per policy: 20000
+  Output: capacity_aware_comparison_24h
+
+Checking gateway...
+✓ Gateway is running
+
+==================================================
+SCALABLE ECMR vs C-MORL COMPARISON
+==================================================
+Configuration:
+  Hours: 24
+  VMs per hour: 10
+  Total VMs per episode: 240
+  Timesteps per policy: 20000
+  Output: capacity_aware_comparison_24h
+
+Checking gateway...
+✓ Gateway is running
+
+==================================================
+Running comparison (this may take 30-60 minutes)...
+==================================================
+Comparison running (PID: 10857)
+Progress log: capacity_aware_comparison_24h/comparison_output.log
+
+Monitor progress with:
+  tail -f capacity_aware_comparison_24h/comparison_output.log
+
+[1m elapsed] Still running...
+  ✓ ECMR completed
+[2m elapsed] Still running...
+[3m elapsed] Still running...
+[4m elapsed] Still running...
+[5m elapsed] Still running...
+
+==================================================
+✓ COMPARISON COMPLETE!
+==================================================
+
+Generating visualizations...
+
+================================================================================
+GENERATING VISUALIZATIONS
+================================================================================
+✓ Saved: capacity_aware_comparison_24h/figures/objectives_comparison.png
+✓ Saved: capacity_aware_comparison_24h/figures/pareto_front_3d.png
+✓ Saved: capacity_aware_comparison_24h/figures/metrics_radar.png
+✓ Saved: capacity_aware_comparison_24h/figures/green_dc_utilization.png
+✓ Saved: capacity_aware_comparison_24h/figures/improvement_summary.png
+================================================================================
+✓ All visualizations saved to capacity_aware_comparison_24h/figures/
+================================================================================
+
+Results saved to: capacity_aware_comparison_24h/
+  - Report: capacity_aware_comparison_24h/comparison_report.md
+  - Figures: capacity_aware_comparison_24h/figures/
+
+View report:
+  cat capacity_aware_comparison_24h/comparison_report.md
+
+==================================================
+✓ CAPACITY-AWARE COMPARISON COMPLETE
+==================================================

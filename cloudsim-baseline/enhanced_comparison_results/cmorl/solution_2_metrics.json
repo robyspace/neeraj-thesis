@@ -1,0 +1,150 @@
+{
+  "algorithm": "C-MORL Solution #2 (Policy 3)",
+  "metrics": {
+    "M1_resource_utilization": {
+      "total_energy_kwh": 0.5536,
+      "total_vms": 10,
+      "energy_per_vm_kwh": 0.05536,
+      "avg_cpu_utilization_pct": 29.6,
+      "avg_ram_utilization_pct": 32.1,
+      "efficiency_score": 0.29600000000000004
+    },
+    "M2_throughput": {
+      "successful_vms": 10,
+      "failed_vms": 0,
+      "total_vms": 10,
+      "success_rate_pct": 100.0,
+      "vms_per_second": 0.16666666666666666,
+      "throughput_score": 1.0
+    },
+    "M3_response_time": {
+      "avg_network_latency_ms": 9.298613896967423,
+      "avg_vm_creation_time_s": 0.05,
+      "total_simulation_time_s": 60.0,
+      "response_score": 0.10754291027463052
+    },
+    "M4_carbon_reduction": {
+      "total_carbon_emissions_gco2": 41.7,
+      "baseline_carbon_gco2": 0.0,
+      "reduction_vs_baseline_pct": 0.0,
+      "avg_carbon_intensity_gco2_per_kwh": 15.4,
+      "avg_renewable_pct": 34.7,
+      "carbon_score": 0.0
+    },
+    "M5_green_dc_utilization": {
+      "green_dc_vms": 0,
+      "brown_dc_vms": 10,
+      "total_vms": 10,
+      "green_utilization_pct": 0.0,
+      "brown_utilization_pct": 100.0,
+      "green_dc_score": 0.0
+    }
+  },
+  "raw_data": {
+    "solution_idx": 1,
+    "policy_id": 3,
+    "preference": [
+      0.0200119501874526,
+      0.6726183177105184,
+      0.3073697321020289
+    ],
+    "objectives": [
+      0.5535851737777768,
+      0.0,
+      9.298613896967423
+    ],
+    "stage": 1,
+    "detail": {
+      "overall_stats": {
+        "total_it_energy_kwh": 0.4691,
+        "total_facility_energy_kwh": 0.5536,
+        "average_pue": 1.18,
+        "total_vms": 10,
+        "successful_vms": 10,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 0.0417,
+        "total_carbon_gco2": 41.7,
+        "avg_carbon_intensity": 15.4,
+        "avg_renewable_pct": 34.7
+      },
+      "green_dc_util": {
+        "green_dc_vms": 0,
+        "green_pct": 0.0,
+        "brown_dc_vms": 10,
+        "brown_pct": 100.0,
+        "total_vms": 10,
+        "green_dc_score": 0.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_PARIS": {
+          "vms_placed": 10,
+          "vm_percentage": 100.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1079,
+          "pue": 1.15,
+          "carbon_intensity": 15.0,
+          "carbon_emissions_kg": 0.0017,
+          "renewable_pct": 34.7,
+          "cpu_utilization": 29.6,
+          "ram_utilization": 32.1
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 227.0,
+          "carbon_emissions_kg": 0.0256,
+          "renewable_pct": 45.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1032,
+          "pue": 1.1,
+          "carbon_intensity": 34.0,
+          "carbon_emissions_kg": 0.0035,
+          "renewable_pct": 65.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        }
+      },
+      "dc_selection": {
+        "DC_PARIS": {
+          "vms": 10,
+          "percentage": 100.0
+        }
+      },
+      "vm_distribution": {
+        "small": 6,
+        "medium": 2,
+        "large": 2,
+        "xlarge": 0
+      },
+      "objectives": {
+        "energy_kwh": 0.5536,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.2986
+      }
+    }
+  }
+}

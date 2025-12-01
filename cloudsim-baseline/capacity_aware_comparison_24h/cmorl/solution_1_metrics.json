@@ -1,0 +1,145 @@
+{
+  "algorithm": "C-MORL Solution #1 (Policy 3)",
+  "metrics": {
+    "M1_resource_utilization": {
+      "total_energy_kwh": 26.6906,
+      "total_vms": 240,
+      "energy_per_vm_kwh": 0.11121083333333333,
+      "avg_cpu_utilization_pct": 0.0,
+      "avg_ram_utilization_pct": 0.0,
+      "efficiency_score": 0.5
+    },
+    "M2_throughput": {
+      "successful_vms": 240,
+      "failed_vms": 0,
+      "total_vms": 240,
+      "success_rate_pct": 100.0,
+      "vms_per_second": 4.0,
+      "throughput_score": 1.0
+    },
+    "M3_response_time": {
+      "avg_network_latency_ms": 8.617477722039666,
+      "avg_vm_creation_time_s": 0.05,
+      "total_simulation_time_s": 60.0,
+      "response_score": 0.11604323588124235
+    },
+    "M4_carbon_reduction": {
+      "total_carbon_emissions_gco2": 1958.2,
+      "baseline_carbon_gco2": 0.0,
+      "reduction_vs_baseline_pct": 0.0,
+      "avg_carbon_intensity_gco2_per_kwh": 27.8,
+      "avg_renewable_pct": 28.5,
+      "carbon_score": 0.0
+    },
+    "M5_green_dc_utilization": {
+      "green_dc_vms": 240,
+      "brown_dc_vms": 0,
+      "total_vms": 240,
+      "green_utilization_pct": 100.0,
+      "brown_utilization_pct": 0.0,
+      "green_dc_score": 1.0
+    }
+  },
+  "raw_data": {
+    "solution_idx": 0,
+    "policy_id": 3,
+    "preference": [
+      0.0200119501874526,
+      0.6726183177105184,
+      0.3073697321020289
+    ],
+    "objectives": [
+      26.69056309466664,
+      383.39881778693,
+      8.617477722039666
+    ],
+    "stage": 1,
+    "detail": {
+      "overall_stats": {
+        "total_it_energy_kwh": 22.6191,
+        "total_facility_energy_kwh": 26.6906,
+        "average_pue": 1.18,
+        "total_vms": 240,
+        "successful_vms": 240,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 1.9582,
+        "total_carbon_gco2": 1958.2,
+        "avg_carbon_intensity": 27.8,
+        "avg_renewable_pct": 28.5
+      },
+      "green_dc_util": {
+        "green_dc_vms": 240,
+        "green_pct": 100.0,
+        "brown_dc_vms": 0,
+        "brown_pct": 0.0,
+        "total_vms": 240,
+        "green_dc_score": 1.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 120,
+          "vm_percentage": 50.0,
+          "it_energy_kwh": 4.5238,
+          "total_energy_kwh": 5.4286,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 501.6,
+          "ram_utilization": 544.6
+        },
+        "DC_PARIS": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 4.5238,
+          "total_energy_kwh": 5.2024,
+          "pue": 1.15,
+          "carbon_intensity": 14.0,
+          "carbon_emissions_kg": 0.0715,
+          "renewable_pct": 35.5,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 4.5238,
+          "total_energy_kwh": 5.4286,
+          "pue": 1.2,
+          "carbon_intensity": 243.0,
+          "carbon_emissions_kg": 1.3213,
+          "renewable_pct": 40.2,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 48,
+          "vm_percentage": 20.0,
+          "it_energy_kwh": 4.5238,
+          "total_energy_kwh": 4.9762,
+          "pue": 1.1,
+          "carbon_intensity": 35.0,
+          "carbon_emissions_kg": 0.1741,
+          "renewable_pct": 65.4,
+          "cpu_utilization": 177.6,
+          "ram_utilization": 192.9
+        }
+      },
+      "dc_selection": {},
+      "vm_distribution": {
+        "small": 107,
+        "medium": 61,
+        "large": 45,
+        "xlarge": 27
+      },
+      "objectives": {
+        "energy_kwh": 26.6906,
+        "carbon_gco2": 383.3988,
+        "latency_ms": 8.6175
+      }
+    }
+  }
+}

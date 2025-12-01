@@ -1,0 +1,69 @@
+{
+  "algorithm": "ECMR",
+  "metrics": {
+    "M1_resource_utilization": {
+      "total_energy_kwh": 0.0,
+      "total_vms": 0,
+      "energy_per_vm_kwh": 0.0,
+      "avg_cpu_utilization_pct": 0.0,
+      "avg_ram_utilization_pct": 0.0,
+      "efficiency_score": 0.5
+    },
+    "M2_throughput": {
+      "successful_vms": 0,
+      "failed_vms": 0,
+      "total_vms": 0,
+      "success_rate_pct": 0.0,
+      "vms_per_second": 0.0,
+      "throughput_score": 0.0
+    },
+    "M3_response_time": {
+      "avg_network_latency_ms": 0.0,
+      "avg_vm_creation_time_s": 0.1,
+      "total_simulation_time_s": 10.0,
+      "response_score": 0.1
+    },
+    "M4_carbon_reduction": {
+      "total_carbon_emissions_gco2": 0.0,
+      "baseline_carbon_gco2": 0.0,
+      "reduction_vs_baseline_pct": 0.0,
+      "avg_carbon_intensity_gco2_per_kwh": 0.0,
+      "avg_renewable_pct": 0.0,
+      "carbon_score": 1.0
+    },
+    "M5_green_dc_utilization": {}
+  },
+  "raw_data": {
+    "overall_stats": {
+      "total_it_energy_kwh": 0.0,
+      "total_facility_energy_kwh": 0.0,
+      "average_pue": 0.0,
+      "total_vms": 0,
+      "successful_vms": 0,
+      "failed_vms": 0,
+      "success_rate_pct": 0.0
+    },
+    "carbon_metrics": {
+      "total_carbon_kg": 0.0,
+      "total_carbon_gco2": 0.0,
+      "avg_carbon_intensity": 0.0,
+      "avg_renewable_pct": 0.0
+    },
+    "datacenter_stats": {},
+    "vm_distribution": {
+      "small": 0,
+      "medium": 0,
+      "large": 0,
+      "xlarge": 0
+    },
+    "datacenter_selection": {},
+    "green_dc_utilization": {},
+    "runtime_seconds": 1722.619350194931,
+    "config": {
+      "hours": 24,
+      "vms_per_hour": 10,
+      "total_vms": 240,
+      "data_path": "output/synchronized_dataset_2024.csv"
+    }
+  }
+}

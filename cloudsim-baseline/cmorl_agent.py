@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Multi-Objective PPO Agent for C-MORL
+Multi-Objective PPO Agent for C-MORL (Proximal Policy Optimization)
 Implements PPO with separate value networks for each objective
 Supports preference-based scalarization
 """
@@ -107,7 +107,7 @@ class CMORLAgent:
         Initialize C-MORL agent
 
         Args:
-            state_dim: State space dimensionality (132 with DC types)
+            state_dim: State space dimensionality (137 with DC types)
             action_dim: Action space size (5)
             preference_vector: [w_energy, w_carbon, w_latency] weights
             learning_rate: Learning rate for optimizers
@@ -372,13 +372,13 @@ if __name__ == "__main__":
     print("="*80)
 
     agent = CMORLAgent(
-        state_dim=132,
+        state_dim=137,
         action_dim=5,
         preference_vector=np.array([0.5, 0.3, 0.2])  # Energy, Carbon, Latency
     )
 
     # Test action selection
-    test_state = np.random.randn(132)
+    test_state = np.random.randn(137)
     action, log_prob = agent.select_action(test_state)
 
     print(f"\n✓ Agent created with preference [0.5, 0.3, 0.2]")

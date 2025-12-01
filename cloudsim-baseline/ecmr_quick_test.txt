@@ -1,0 +1,163 @@
+================================================================================
+ECMR + HETEROGENEOUS CLOUDSIM INTEGRATION
+================================================================================
+
+[1/6] Loading carbon intensity data...
+      Loaded 8784 hourly records
+
+[2/6] Connecting to Java gateway...
+      ✓ Connected to Py4JGatewayEnhanced
+
+[3/6] Initializing CloudSim simulation...
+      ✓ CloudSim initialized
+
+[4/6] Creating heterogeneous datacenters...
+      Each datacenter: 40 servers of each type (120 total)
+      - 40 × Huawei RH2285 V2 (16 cores, 24GB, 2.3GHz)
+      - 40 × Huawei RH2288H V3 (40 cores, 64GB, 3.6GHz)
+      - 40 × Lenovo SR655 V3 (96 cores, 192GB, 2.4GHz)
+
+      ✓ DC_ITALY: Milan DC (PUE 1.2)
+      ✓ DC_FRANCE: Paris DC (PUE 1.15)
+      ✓ DC_SWEDEN: Stockholm DC (PUE 1.1)
+      ✓ DC_NETHERLANDS: Amsterdam DC (PUE 1.2)
+      ✓ DC_SPAIN: Madrid DC (PUE 1.25)
+
+[5/6] Running simulation (2 hours, 5 VMs/hour)...
+      Using random user locations across 20 European cities
+
+  Hour 1/2 (2024-01-01 00:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '232', 'DC_FRANCE': '15', 'DC_SWEDEN': '33', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '94'}
+    Renewable: {'DC_ITALY': '43.1%', 'DC_FRANCE': '35.1%', 'DC_SWEDEN': '65.6%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '43.6%'}
+    Placements: DC_SWEDEN: 5
+    User cities: Paris, London, Rome, Berlin, Madrid
+
+  Hour 2/2 (2024-01-01 01:00:00)
+    Carbon (gCO2/kWh): {'DC_ITALY': '227', 'DC_FRANCE': '15', 'DC_SWEDEN': '34', 'DC_NETHERLANDS': '0', 'DC_SPAIN': '94'}
+    Renewable: {'DC_ITALY': '45.0%', 'DC_FRANCE': '34.7%', 'DC_SWEDEN': '65.0%', 'DC_NETHERLANDS': '0.0%', 'DC_SPAIN': '42.3%'}
+    Placements: DC_SWEDEN: 5
+    User cities: Amsterdam, Copenhagen, Stockholm, Brussels, Vienna
+
+  ✓ Placed 10 VMs across 2 hours
+  ✓ Used 10 unique user locations
+
+[6/6] Running CloudSim simulation...
+      ✓ Simulation completed in 0.04s
+
+================================================================================
+SIMULATION RESULTS
+================================================================================
+
+ OVERALL STATISTICS
+--------------------------------------------------------------------------------
+  Total IT Energy: 0.7038 kWh
+  Total Facility Energy (PUE-adjusted): 0.8304 kWh
+  Average PUE: 1.18
+  Total VMs Requested: 10
+  Successful VMs: 10
+  Failed VMs: 0
+  Success Rate: 100.0%
+
+ CARBON & RENEWABLE METRICS
+--------------------------------------------------------------------------------
+  Total Carbon Emissions: 0.0626 kg CO2
+  Weighted Avg Carbon Intensity: 34.0 gCO2/kWh
+  Weighted Avg Renewable %: 65.0%
+  VM Carbon Intensity: avg=33.7, min=33.3, max=34.0 gCO2/kWh
+
+🌱 M5: GREEN DATACENTER UTILIZATION
+--------------------------------------------------------------------------------
+  Green Datacenter (DG) VMs: 10 (100.00%)
+  Brown Datacenter (DB) VMs: 0 (0.00%)
+  ➜ Green DC Utilization Score: 1.000/1.000
+  Green: ██████████████████████████████████████████████████
+  Brown: 
+
+PER-DATACENTER STATISTICS
+--------------------------------------------------------------------------------
+  DC_ITALY (Milan DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.1408 kWh | Total (PUE 1.2): 0.1689 kWh
+    Carbon: 227 gCO2/kWh | Emissions: 0.0384 kg CO2
+    Renewable: 45.0% (Hydro: 2592.0 MW, Solar: 0.0 MW, Wind: 4041.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_FRANCE (Paris DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.1408 kWh | Total (PUE 1.15): 0.1619 kWh
+    Carbon: 15 gCO2/kWh | Emissions: 0.0025 kg CO2
+    Renewable: 34.7% (Hydro: 7608.0 MW, Solar: 0.0 MW, Wind: 14367.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_SWEDEN (Stockholm DC):
+    VMs: 10 (100.0% of total)
+    IT Energy: 0.1408 kWh | Total (PUE 1.1): 0.1548 kWh
+    Carbon: 34 gCO2/kWh | Emissions: 0.0053 kg CO2
+    Renewable: 65.0% (Hydro: 5249.0 MW, Solar: 0.0 MW, Wind: 4571.0 MW)
+    Utilization: CPU 37.8%, RAM 41.1%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_NETHERLANDS (Amsterdam DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.1408 kWh | Total (PUE 1.2): 0.1689 kWh
+    Carbon: 0 gCO2/kWh | Emissions: 0.0000 kg CO2
+    Renewable: 0.0% (Hydro: 0.0 MW, Solar: 0.0 MW, Wind: 0.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_SPAIN (Madrid DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.1408 kWh | Total (PUE 1.25): 0.1759 kWh
+    Carbon: 94 gCO2/kWh | Emissions: 0.0165 kg CO2
+    Renewable: 42.3% (Hydro: 4064.0 MW, Solar: 28.0 MW, Wind: 5608.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+ VM TYPE DISTRIBUTION
+--------------------------------------------------------------------------------
+  small   :    5 ( 50.0%) █████████████████████████
+  medium  :    3 ( 30.0%) ███████████████
+  large   :    1 ( 10.0%) █████
+  xlarge  :    1 ( 10.0%) █████
+
+ DATACENTER SELECTION DISTRIBUTION
+--------------------------------------------------------------------------------
+  DC_ITALY       :    0 (  0.0%) 
+  DC_FRANCE      :    0 (  0.0%) 
+  DC_SWEDEN      :   10 (100.0%) ██████████████████████████████████████████████████
+  DC_NETHERLANDS :    0 (  0.0%) 
+  DC_SPAIN       :    0 (  0.0%) 
+
+ USER LOCATION ANALYSIS
+--------------------------------------------------------------------------------
+  Unique User Cities: 10
+  Top 5 Cities:
+    Paris: 1 VMs (10.0%)
+    London: 1 VMs (10.0%)
+    Berlin: 1 VMs (10.0%)
+    Madrid: 1 VMs (10.0%)
+    Rome: 1 VMs (10.0%)
+
+ HOURLY ANALYSIS
+--------------------------------------------------------------------------------
+  Hours Simulated: 2
+  Avg Carbon per Hour: 33.7 gCO2/kWh
+  Avg Renewable per Hour: 65.3%
+  Best Hour (lowest carbon): Hour 1 (33.3 gCO2/kWh)
+  Worst Hour (highest carbon): Hour 2 (34.0 gCO2/kWh)
+
+ ECMR ALGORITHM EFFECTIVENESS
+--------------------------------------------------------------------------------
+  Actual Avg Carbon: 33.7 gCO2/kWh
+  Random Placement: 74.0 gCO2/kWh
+  Worst Case: 227.1 gCO2/kWh
+  Improvement vs Random: 54.5% (40.4 gCO2/kWh saved)
+  Improvement vs Worst: 85.2% (193.4 gCO2/kWh saved)
+
+================================================================================
+✓ SIMULATION COMPLETED SUCCESSFULLY
+================================================================================
+
+Shutting down gateway...

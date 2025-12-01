@@ -1,0 +1,73 @@
+{
+  "pareto_front_size": 4,
+  "hypervolume": 1989.206933883048,
+  "expected_utility": -2.9176223470308873,
+  "solutions": [
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 1,
+        "preference": [
+          0.09784296501149996,
+          0.6276139633959614,
+          0.27454307159253855
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 3,
+        "preference": [
+          0.0200119501874526,
+          0.6726183177105184,
+          0.3073697321020289
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        6.676145393333341,
+        245.4952184036537,
+        5.639565983176281
+      ],
+      "metadata": {
+        "policy_id": "extended_1_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 0
+      }
+    },
+    {
+      "objectives": [
+        6.673995066222237,
+        60.226131477589476,
+        6.71944555878697
+      ],
+      "metadata": {
+        "policy_id": "extended_2_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 1
+      }
+    }
+  ]
+}

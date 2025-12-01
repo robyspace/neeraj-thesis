@@ -1,0 +1,51 @@
+================================================================================
+ENHANCED COMPARISON: ECMR vs C-MORL
+================================================================================
+Configuration: 24 hours × 10 VMs/hour
+C-MORL: 3 policies × 20000 timesteps
+Output: capacity_aware_comparison_24h/
+================================================================================
+
+================================================================================
+RUNNING ECMR BASELINE
+================================================================================
+Configuration: 24 hours × 10 VMs/hour = 240 total VMs
+Data: output/synchronized_dataset_2024.csv
+
+Command: python3 ecmr_heterogeneous_integration.py --data output/synchronized_dataset_2024.csv --hours 24 --vms-per-hour 10
+Running...
+
+✓ ECMR completed in 0.4s
+✓ Output saved to capacity_aware_comparison_24h/ecmr/output.txt
+
+Parsing ECMR results...
+✓ Metrics saved to capacity_aware_comparison_24h/ecmr/
+
+================================================================================
+RUNNING C-MORL
+================================================================================
+Configuration: 24 hours × 10 VMs/hour = 240 total VMs
+Training: 3 policies × 20000 timesteps
+Extension: 2 sparse solutions
+Seed: 42
+
+Command: python3 train_cmorl.py --simulation-hours 24 --vms-per-hour 10 --n-policies 3 --timesteps 20000 --n-extend 2 --output-dir capacity_aware_comparison_24h/cmorl --seed 42
+Running (this may take a while)...
+
+
+✓ C-MORL completed in 327.9s (5.5 minutes)
+✓ Output saved to capacity_aware_comparison_24h/cmorl/training_log.txt
+
+Parsing C-MORL results...
+✓ Metrics for 2 solutions saved to capacity_aware_comparison_24h/cmorl/
+
+✓ Comparison report saved to capacity_aware_comparison_24h/comparison_report.md
+
+================================================================================
+✓ COMPARISON COMPLETE
+================================================================================
+Results saved to: capacity_aware_comparison_24h/
+  - ECMR metrics: capacity_aware_comparison_24h/ecmr/metrics.json
+  - C-MORL metrics: capacity_aware_comparison_24h/cmorl/solution_*_metrics.json
+  - Comparison report: capacity_aware_comparison_24h/comparison_report.md
+================================================================================

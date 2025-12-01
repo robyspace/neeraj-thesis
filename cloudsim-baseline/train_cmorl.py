@@ -2,8 +2,8 @@
 """
 C-MORL Training Script
 Implements two-stage training:
-  Stage 1: Pareto initialization (M=6 policies, 1.5M timesteps each)
-  Stage 2: Pareto extension (N=5 policies, K=60 constrained steps)
+  Stage 1: Pareto initialization (M=3 policies, 1000 timesteps each)
+  Stage 2: Pareto extension (N=2 policies, K=60 constrained steps)
 """
 
 import numpy as np
@@ -12,8 +12,9 @@ from pathlib import Path
 import logging
 import json
 from datetime import datetime
-from typing import Dict, List
+from typing import Dict, List, Tuple
 import argparse
+import pandas as pd
 
 from cmorl_environment import CMORLEnvironment
 from cmorl_agent import CMORLAgent
@@ -264,7 +265,7 @@ class CMORLTrainer:
 
             # Create agent
             agent = CMORLAgent(
-                state_dim=132,
+                state_dim=137,
                 action_dim=5,
                 preference_vector=preference,
                 learning_rate=3e-4
@@ -346,7 +347,7 @@ class CMORLTrainer:
 
             # Load base policy
             base_agent = CMORLAgent(
-                state_dim=132,
+                state_dim=137,
                 action_dim=5,
                 preference_vector=metadata['preference']
             )
@@ -374,7 +375,7 @@ class CMORLTrainer:
 
                 # Create new agent with adjusted preference
                 extended_agent = CMORLAgent(
-                    state_dim=132,
+                    state_dim=137,
                     action_dim=5,
                     preference_vector=new_preference
                 )
@@ -410,7 +411,7 @@ class CMORLTrainer:
                 )
 
                 stage2_results.append({
-                    'base_solution': pareto_idx,
+                    'base_solution': int(pareto_idx),  # Convert from numpy int64
                     'target_objective': target_obj_name,
                     'objectives': extended_objectives.tolist(),
                     'preference': new_preference.tolist()
@@ -427,6 +428,247 @@ class CMORLTrainer:
         logger.info("✓ Stage 2 complete")
         return stage2_results
 
+    def evaluate_solution(self, policy_path: str, preference: np.ndarray) -> Tuple[Dict, pd.DataFrame]:
+        """
+        Evaluate a single policy by running a full episode and collecting detailed results.
+        Returns CloudSim results and placement decisions like ECMR does.
+
+        Args:
+            policy_path: Path to saved policy weights
+            preference: Preference vector for the agent
+
+        Returns:
+            (cloudsim_results, placement_decisions_df)
+        """
+        logger.info(f"Evaluating policy: {policy_path}")
+
+        # Create environment and agent
+        env = CMORLEnvironment(
+            simulation_hours=self.simulation_hours,
+            vms_per_hour=self.vms_per_hour,
+            random_seed=self.random_seed
+        )
+
+        agent = CMORLAgent(
+            state_dim=env.observation_space.shape[0],
+            action_dim=env.action_space.n,
+            preference_vector=preference
+        )
+
+        # Load policy (weights_only=False for compatibility with numpy arrays)
+        checkpoint = torch.load(policy_path, weights_only=False)
+        agent.policy.load_state_dict(checkpoint['policy_state_dict'])
+
+        # Run evaluation episode
+        state, info = env.reset(seed=self.random_seed)
+        done = False
+        placement_decisions = []
+
+        while not done:
+            # Select action deterministically
+            action, _ = agent.select_action(state, deterministic=True)
+            next_state, reward, done, truncated, info = env.step(action)
+
+            # Record placement decision
+            if 'placement_decision' in info:
+                placement_decisions.append(info['placement_decision'])
+
+            state = next_state
+
+        # Get final CloudSim results
+        cloudsim_results = env.app.getResults()
+
+        # Get datacenter states and convert to ECMR-compatible format
+        from cmorl_environment import DATACENTERS as DC_CONFIG
+
+        # Map DC names for display
+        dc_names = {
+            'DC_MADRID': 'Madrid DC',
+            'DC_AMSTERDAM': 'Amsterdam DC',
+            'DC_PARIS': 'Paris DC',
+            'DC_MILAN': 'Milan DC',
+            'DC_STOCKHOLM': 'Stockholm DC'
+        }
+
+        class DCStateWrapper:
+            """Wrapper to make dict datacenter states compatible with print function"""
+            def __init__(self, dc_id, state_dict):
+                self.name = dc_names.get(dc_id, dc_id)
+                self.carbon_intensity = state_dict['carbon_intensity']
+                self.renewable_pct = state_dict['renewable_pct']
+                self.dc_type = state_dict.get('dc_type', 'DG')
+                self.hydro_mw = state_dict.get('hydro_mw', 0.0)
+                self.solar_mw = state_dict.get('solar_mw', 0.0)
+                self.wind_mw = state_dict.get('wind_mw', 0.0)
+                self.pue = DC_CONFIG[dc_id]['pue']
+                self.vms_placed = state_dict['vms_placed']
+
+        datacenter_states = {}
+        for dc_id in env.datacenter_ids:
+            datacenter_states[dc_id] = {
+                'stats': env.app.getDatacenterStats(dc_id),
+                'state': DCStateWrapper(dc_id, env.datacenter_states[dc_id])
+            }
+
+        env.close()
+
+        # Convert placement decisions to DataFrame
+        placement_df = pd.DataFrame(placement_decisions) if placement_decisions else pd.DataFrame()
+
+        return cloudsim_results, placement_df, datacenter_states
+
+    def print_solution_results(self, solution_idx: int, preference: np.ndarray,
+                               objectives: np.ndarray, cloudsim_results: Dict,
+                               placement_df: pd.DataFrame, datacenter_states: Dict):
+        """
+        Print detailed results for a single Pareto solution in ECMR format.
+
+        Args:
+            solution_idx: Index of solution in Pareto front
+            preference: Preference vector used
+            objectives: [energy, carbon, latency] objectives
+            cloudsim_results: CloudSim simulation results
+            placement_df: DataFrame of placement decisions
+            datacenter_states: Datacenter statistics and state
+        """
+        print("="*80)
+        print(f"C-MORL SOLUTION #{solution_idx + 1} RESULTS")
+        print(f"Preference: Energy={preference[0]:.2f}, Carbon={preference[1]:.2f}, Latency={preference[2]:.2f}")
+        print("="*80)
+        print()
+
+        # === SECTION 1: Overall Statistics ===
+        print(" OVERALL STATISTICS")
+        print("-" * 80)
+        print(f"  Total IT Energy: {cloudsim_results.get('totalITEnergyKWh', 0):.4f} kWh")
+        print(f"  Total Facility Energy (PUE-adjusted): {cloudsim_results.get('totalEnergyKWh', 0):.4f} kWh")
+        print(f"  Average PUE: {cloudsim_results.get('averagePUE', 0):.2f}")
+        print(f"  Total VMs Requested: {cloudsim_results.get('totalVMs', 0)}")
+        print(f"  Successful VMs: {cloudsim_results.get('successfulVMs', 0)}")
+        print(f"  Failed VMs: {cloudsim_results.get('failedVMs', 0)}")
+        success_rate = (cloudsim_results.get('successfulVMs', 0) /
+                       max(cloudsim_results.get('totalVMs', 1), 1) * 100)
+        print(f"  Success Rate: {success_rate:.1f}%")
+        print()
+
+        # === SECTION 2: Carbon Metrics ===
+        print(" CARBON & RENEWABLE METRICS")
+        print("-" * 80)
+
+        total_carbon = 0
+        weighted_carbon_avg = 0
+        weighted_renewable_avg = 0
+        total_vms = len(placement_df) if not placement_df.empty else 1
+
+        dc_carbon_details = []
+        for dc_id, dc_data in datacenter_states.items():
+            stats = dc_data['stats']
+            dc_state = dc_data['state']
+            dc_energy = stats.get('totalEnergyKWh', 0)
+            dc_carbon = dc_energy * (dc_state.carbon_intensity / 1000)  # gCO2/kWh to kgCO2
+            total_carbon += dc_carbon
+
+            # Weight by VMs placed
+            weighted_carbon_avg += dc_state.carbon_intensity * (dc_state.vms_placed / total_vms)
+            weighted_renewable_avg += dc_state.renewable_pct * (dc_state.vms_placed / total_vms)
+
+            dc_carbon_details.append((dc_id, dc_state, dc_energy, dc_carbon, stats))
+
+        print(f"  Total Carbon Emissions: {total_carbon:.4f} kg CO2")
+        print(f"  Weighted Avg Carbon Intensity: {weighted_carbon_avg:.1f} gCO2/kWh")
+        print(f"  Weighted Avg Renewable %: {weighted_renewable_avg:.1f}%")
+
+        if not placement_df.empty and 'carbon_intensity' in placement_df.columns:
+            avg_vm_carbon = placement_df['carbon_intensity'].mean()
+            min_vm_carbon = placement_df['carbon_intensity'].min()
+            max_vm_carbon = placement_df['carbon_intensity'].max()
+            print(f"  VM Carbon Intensity: avg={avg_vm_carbon:.1f}, min={min_vm_carbon:.1f}, max={max_vm_carbon:.1f} gCO2/kWh")
+        print()
+
+        # === SECTION 2.5: Green Datacenter Utilization (M5) ===
+        print("🌱 M5: GREEN DATACENTER UTILIZATION")
+        print("-" * 80)
+
+        if not placement_df.empty and 'dc_type' in placement_df.columns:
+            green_dc_placements = sum(1 for _, row in placement_df.iterrows() if row['dc_type'] == 'DG')
+            brown_dc_placements = sum(1 for _, row in placement_df.iterrows() if row['dc_type'] == 'DB')
+            total_placements = len(placement_df)
+
+            green_utilization_pct = (green_dc_placements / total_placements * 100) if total_placements > 0 else 0
+            brown_utilization_pct = (brown_dc_placements / total_placements * 100) if total_placements > 0 else 0
+
+            print(f"  Green Datacenter (DG) VMs: {green_dc_placements} ({green_utilization_pct:.2f}%)")
+            print(f"  Brown Datacenter (DB) VMs: {brown_dc_placements} ({brown_utilization_pct:.2f}%)")
+            print(f"  ➜ Green DC Utilization Score: {green_utilization_pct/100:.3f}/1.000")
+
+            # Visual bar representation
+            green_bar = '█' * int(green_utilization_pct / 2)
+            brown_bar = '█' * int(brown_utilization_pct / 2)
+            print(f"  Green: {green_bar}")
+            print(f"  Brown: {brown_bar}")
+        else:
+            print("  [DC type data not available in placement decisions]")
+        print()
+
+        # === SECTION 3: Per-Datacenter Details ===
+        print(" PER-DATACENTER STATISTICS")
+        print("-" * 80)
+
+        for dc_id, dc_state, dc_energy, dc_carbon, stats in dc_carbon_details:
+            placement_pct = (dc_state.vms_placed / total_vms) * 100 if total_vms > 0 else 0
+
+            print(f"  {dc_id} ({dc_state.name}):")
+            print(f"    VMs: {dc_state.vms_placed} ({placement_pct:.1f}% of total)")
+            print(f"    IT Energy: {stats.get('itEnergyKWh', 0):.4f} kWh | "
+                  f"Total (PUE {dc_state.pue}): {dc_energy:.4f} kWh")
+            print(f"    Carbon: {dc_state.carbon_intensity:.0f} gCO2/kWh | "
+                  f"Emissions: {dc_carbon:.4f} kg CO2")
+            print(f"    Renewable: {dc_state.renewable_pct:.1f}% "
+                  f"(Hydro: {dc_state.hydro_mw:.1f} MW, Solar: {dc_state.solar_mw:.1f} MW, Wind: {dc_state.wind_mw:.1f} MW)")
+            print(f"    Utilization: CPU {stats.get('cpuUtilization', 0):.1%}, "
+                  f"RAM {stats.get('ramUtilization', 0):.1%}")
+            print(f"    Server Mix: RH2285: {stats.get('huaweiRH2285Count', 0)}, "
+                  f"RH2288: {stats.get('huaweiRH2288Count', 0)}, "
+                  f"SR655: {stats.get('lenovoSR655Count', 0)}")
+            print()
+
+        # === SECTION 4: VM Distribution ===
+        print(" VM TYPE DISTRIBUTION")
+        print("-" * 80)
+        if not placement_df.empty and 'vm_type' in placement_df.columns:
+            type_counts = placement_df['vm_type'].value_counts()
+            for vm_type in ['small', 'medium', 'large', 'xlarge']:
+                count = type_counts.get(vm_type, 0)
+                pct = (count / len(placement_df)) * 100
+                bar = '█' * int(pct / 2)
+                print(f"  {vm_type:8s}: {count:4d} ({pct:5.1f}%) {bar}")
+        print()
+
+        # === SECTION 5: Datacenter Selection ===
+        print(" DATACENTER SELECTION DISTRIBUTION")
+        print("-" * 80)
+        if not placement_df.empty and 'datacenter' in placement_df.columns:
+            dc_counts = placement_df['datacenter'].value_counts()
+            for dc_id in datacenter_states.keys():
+                count = dc_counts.get(dc_id, 0)
+                pct = (count / len(placement_df)) * 100 if len(placement_df) > 0 else 0
+                bar = '█' * int(pct / 2)
+                print(f"  {dc_id:15s}: {count:4d} ({pct:5.1f}%) {bar}")
+        print()
+
+        # === SECTION 6: C-MORL Objectives ===
+        print(" C-MORL OBJECTIVES (Learned Trade-offs)")
+        print("-" * 80)
+        print(f"  Energy: {objectives[0]:.4f} kWh")
+        print(f"  Carbon: {objectives[1]:.4f} gCO2")
+        print(f"  Latency: {objectives[2]:.4f} ms")
+        print()
+
+        print("="*80)
+        print(f"✓ SOLUTION #{solution_idx + 1} EVALUATION COMPLETE")
+        print("="*80)
+        print()
+
     def save_final_results(self):
         """Save final Pareto front and training summary"""
         results_file = self.output_dir / "final_results.json"
@@ -440,13 +682,17 @@ class CMORLTrainer:
 
         for i in range(self.pareto_front.get_size()):
             obj, meta = self.pareto_front.get_solution(i)
-            # Convert numpy arrays to lists for JSON serialization
+            # Convert numpy arrays and types to JSON-serializable format
             meta_serializable = {}
             for k, v in meta.items():
                 if k == 'save_path':
                     continue
                 if isinstance(v, np.ndarray):
                     meta_serializable[k] = v.tolist()
+                elif isinstance(v, (np.int32, np.int64)):
+                    meta_serializable[k] = int(v)
+                elif isinstance(v, (np.float32, np.float64)):
+                    meta_serializable[k] = float(v)
                 else:
                     meta_serializable[k] = v
 
@@ -502,11 +748,43 @@ def main():
         n_steps=60
     )
 
-    # Save final results
+    # Save final results (JSON format)
     trainer.save_final_results()
 
+    # Evaluate and print detailed results for each Pareto solution
     logger.info("="*80)
-    logger.info("✓ C-MORL TRAINING COMPLETE")
+    logger.info("EVALUATING PARETO FRONT SOLUTIONS")
+    logger.info("="*80)
+
+    pareto_size = trainer.pareto_front.get_size()
+    logger.info(f"Evaluating {pareto_size} Pareto solutions with detailed CloudSim results...")
+    print()
+
+    for i in range(pareto_size):
+        obj, meta = trainer.pareto_front.get_solution(i)
+        policy_path = meta.get('save_path')
+        preference = meta.get('preference')
+
+        if policy_path and Path(policy_path).exists():
+            # Evaluate this solution
+            cloudsim_results, placement_df, datacenter_states = trainer.evaluate_solution(
+                policy_path, preference
+            )
+
+            # Print results in ECMR format
+            trainer.print_solution_results(
+                solution_idx=i,
+                preference=preference,
+                objectives=obj,
+                cloudsim_results=cloudsim_results,
+                placement_df=placement_df,
+                datacenter_states=datacenter_states
+            )
+        else:
+            logger.warning(f"Policy file not found for solution {i+1}: {policy_path}")
+
+    logger.info("="*80)
+    logger.info("✓ C-MORL TRAINING & EVALUATION COMPLETE")
     logger.info("="*80)
 
 

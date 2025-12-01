@@ -1,0 +1,40 @@
+{
+  "pareto_front_size": 2,
+  "hypervolume": 579.5904568275835,
+  "expected_utility": -137.27827232375566,
+  "solutions": [
+    {
+      "objectives": [
+        26.69056309466664,
+        383.39881778693,
+        8.617477722039666
+      ],
+      "metadata": {
+        "policy_id": 3,
+        "preference": [
+          0.0200119501874526,
+          0.6726183177105184,
+          0.3073697321020289
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        26.69056309466664,
+        319.6962284275303,
+        14.599546070164598
+      ],
+      "metadata": {
+        "policy_id": "extended_1_Carbon",
+        "preference": [
+          0.15,
+          0.7,
+          0.15
+        ],
+        "stage": 2,
+        "base_solution": 0
+      }
+    }
+  ]
+}

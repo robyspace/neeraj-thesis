@@ -1,0 +1,27 @@
+[
+  {
+    "policy_id": 1,
+    "preference": [
+      0.09784296501149996,
+      0.6276139633959614,
+      0.27454307159253855
+    ],
+    "objectives": [
+      0.5535851737777768,
+      0.0,
+      9.298613896967423
+    ],
+    "train_info": {
+      "total_timesteps": 54,
+      "total_episodes": 9,
+      "final_metrics": {
+        "energy_kwh": 0.5535851737777768,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.298613896967423,
+        "failures": 0,
+        "total_placements": 6
+      },
+      "best_return": -0.16459910571575165
+    }
+  }
+]

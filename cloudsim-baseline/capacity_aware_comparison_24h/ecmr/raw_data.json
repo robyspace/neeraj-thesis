@@ -1,0 +1,87 @@
+{
+  "overall_stats": {
+    "total_it_energy_kwh": 22.6185,
+    "total_facility_energy_kwh": 26.6898,
+    "average_pue": 1.18,
+    "total_vms": 290,
+    "successful_vms": 290,
+    "failed_vms": 0,
+    "success_rate_pct": 100.0
+  },
+  "carbon_metrics": {
+    "total_carbon_kg": 1.9581,
+    "total_carbon_gco2": 1958.1,
+    "avg_carbon_intensity": 46.9,
+    "avg_renewable_pct": 47.8
+  },
+  "datacenter_stats": {
+    "DC_FRANCE": {
+      "vms_placed": 10,
+      "vm_percentage": 4.2,
+      "it_energy_kwh": 4.5237,
+      "total_energy_kwh": 5.2023,
+      "pue": 1.15,
+      "carbon_intensity": 14.0,
+      "carbon_emissions_kg": 0.0715,
+      "renewable_pct": 35.5,
+      "cpu_utilization": 31.2,
+      "ram_utilization": 33.9
+    },
+    "DC_SWEDEN": {
+      "vms_placed": 108,
+      "vm_percentage": 45.0,
+      "it_energy_kwh": 4.5237,
+      "total_energy_kwh": 4.9761,
+      "pue": 1.1,
+      "carbon_intensity": 35.0,
+      "carbon_emissions_kg": 0.1741,
+      "renewable_pct": 65.4,
+      "cpu_utilization": 437.5,
+      "ram_utilization": 475.0
+    },
+    "DC_NETHERLANDS": {
+      "vms_placed": 91,
+      "vm_percentage": 37.9,
+      "it_energy_kwh": 4.5237,
+      "total_energy_kwh": 5.4284,
+      "pue": 1.2,
+      "carbon_intensity": 0.0,
+      "carbon_emissions_kg": 0.0,
+      "renewable_pct": 0.0,
+      "cpu_utilization": 319.1,
+      "ram_utilization": 346.4
+    },
+    "DC_SPAIN": {
+      "vms_placed": 71,
+      "vm_percentage": 29.6,
+      "it_energy_kwh": 4.5237,
+      "total_energy_kwh": 5.6546,
+      "pue": 1.25,
+      "carbon_intensity": 69.0,
+      "carbon_emissions_kg": 0.3912,
+      "renewable_pct": 51.4,
+      "cpu_utilization": 292.8,
+      "ram_utilization": 317.9
+    }
+  },
+  "vm_distribution": {
+    "small": 107,
+    "medium": 61,
+    "large": 52,
+    "xlarge": 20
+  },
+  "datacenter_selection": {},
+  "green_dc_utilization": {
+    "green_dc_vms": 240,
+    "brown_dc_vms": 0,
+    "total_vms": 240,
+    "green_utilization_pct": 100.0
+  },
+  "runtime_seconds": 0.4223759174346924,
+  "config": {
+    "hours": 24,
+    "vms_per_hour": 10,
+    "total_vms": 240,
+    "data_path": "output/synchronized_dataset_2024.csv"
+  }
+}

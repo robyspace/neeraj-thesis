@@ -1,0 +1,49 @@
+INFO:__main__:================================================================================
+INFO:__main__:C-MORL TRAINING
+INFO:__main__:================================================================================
+INFO:__main__:Configuration:
+INFO:__main__:  Output dir: cmorl_results_formatted
+INFO:__main__:  Episode: 24 hours × 10 VMs/hour
+INFO:__main__:  Stage 1: 6 policies × 50000 timesteps
+INFO:__main__:  Stage 2: 5 extensions
+INFO:__main__:  Random seed: 42
+INFO:__main__:Initialized C-MORL Trainer
+INFO:__main__:Output directory: cmorl_results_formatted
+INFO:__main__:================================================================================
+INFO:__main__:STAGE 1: PARETO INITIALIZATION
+INFO:__main__:================================================================================
+INFO:__main__:Training 6 policies with 50000 timesteps each
+INFO:pareto_utils:Sampled 6 preference vectors:
+INFO:pareto_utils:  Preference 1: [0.09784297 0.62761396 0.27454307]
+INFO:pareto_utils:  Preference 2: [0.729092   0.13546541 0.13544259]
+INFO:pareto_utils:  Preference 3: [0.02001195 0.67261832 0.30736973]
+INFO:pareto_utils:  Preference 4: [0.25890493 0.00437364 0.73672143]
+INFO:pareto_utils:  Preference 5: [0.80260249 0.10723697 0.09016054]
+INFO:pareto_utils:  Preference 6: [0.15474873 0.27706078 0.5681905 ]
+INFO:__main__:
+--- Training Policy 1/6 ---
+INFO:__main__:Preference: [0.09784297 0.62761396 0.27454307]
+INFO:cmorl_environment:Loading carbon data from output/synchronized_dataset_2024.csv
+INFO:cmorl_environment:Loaded 8784 hourly records
+INFO:cmorl_environment:Connecting to CloudSim gateway...
+INFO:cmorl_environment:Connected to CloudSim
+INFO:cmorl_environment:C-MORL Environment initialized
+INFO:cmorl_agent:Initialized C-MORL agent with preference [0.09784297 0.62761396 0.27454307]
+INFO:__main__:Training policy with preference [0.09784296 0.62761396 0.27454308]
+INFO:__main__:Target timesteps: 50000
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 240 VMs for 24-hour episode
+INFO:cmorl_environment:Episode reset complete: 240 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=26.690 kWh, Carbon=1783.387 gCO2, Latency=12.224 ms
+INFO:cmorl_agent:Saved agent to cmorl_results_formatted/stage1/policy_1.pt
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 240 VMs for 24-hour episode
+INFO:cmorl_environment:Episode reset complete: 240 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=26.690 kWh, Carbon=1506.281 gCO2, Latency=12.718 ms
+INFO:cmorl_agent:Saved agent to cmorl_results_formatted/stage1/policy_1.pt
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 240 VMs for 24-hour episode
+INFO:cmorl_environment:Episode reset complete: 240 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...

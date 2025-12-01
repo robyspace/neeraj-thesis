@@ -48,12 +48,13 @@ class CMORLEnvironment(gym.Env):
     """
     Multi-Objective RL Environment for Carbon-Aware Scheduling
 
-    State Space: 132 dimensions (127 + 5 DC type indicators)
+    State Space: 137 dimensions (127 + 5 DC type + 5 DC capacity)
         [0:4]     VM requirements (cores, ram, storage, latency_sensitivity)
         [4:44]    Per-datacenter metrics (5 DCs × 8 features)
         [44:49]   DC type indicators (5 DCs × 1 binary: 1=Green/DG, 0=Brown/DB)
-        [49:79]   Renewable forecasts (5 DCs × 3 sources × 2 horizons)
-        [79:132]  Historical performance (53 dimensions)
+        [49:54]   DC capacity utilization (5 DCs × 1 float: current_load/max_vms) **NEW**
+        [54:84]   Renewable forecasts (5 DCs × 3 sources × 2 horizons)
+        [84:137]  Historical performance (53 dimensions)
 
     Action Space: Discrete(5) - Select datacenter for current VM
 
@@ -91,11 +92,11 @@ class CMORLEnvironment(gym.Env):
         # Action space: 5 datacenters
         self.action_space = spaces.Discrete(5)
 
-        # State space: 132-dimensional continuous (127 + 5 DC type indicators)
+        # State space: 137-dimensional continuous (127 + 5 DC type + 5 DC capacity)
         self.observation_space = spaces.Box(
             low=-np.inf,
             high=np.inf,
-            shape=(132,),
+            shape=(137,),
             dtype=np.float32
         )
 
@@ -148,6 +149,32 @@ class CMORLEnvironment(gym.Env):
 
         logger.info("C-MORL Environment initialized")
 
+    def _seed_initial_vms(self, seed_count_per_dc: int = 10):
+        """
+        Seed initial VMs across all datacenters for realistic baseline load
+
+        Args:
+            seed_count_per_dc: Number of VMs to place in each datacenter initially
+        """
+        logger.info(f"Seeding {seed_count_per_dc} VMs per datacenter for baseline load...")
+
+        seed_vm_id = 9900000  # High ID to avoid conflicts with episode VMs
+        total_seeded = 0
+
+        for dc_id in self.datacenter_ids:
+            for i in range(seed_count_per_dc):
+                vm_type = np.random.choice(VM_TYPES, p=VM_TYPE_WEIGHTS)
+                success = self.app.submitVMByType(seed_vm_id, vm_type, dc_id)
+
+                if success:
+                    self.datacenter_states[dc_id]['vms_placed'] += 1
+                    self.datacenter_states[dc_id]['current_load'] += 1
+                    total_seeded += 1
+
+                seed_vm_id += 1
+
+        logger.info(f"Seeded {total_seeded} VMs across {len(self.datacenter_ids)} datacenters")
+
     def _init_datacenter_state(self) -> Dict:
         """Initialize datacenter state tracking"""
         return {
@@ -160,7 +187,10 @@ class CMORLEnvironment(gym.Env):
             'electricity_price': 50.0,
             'network_latency': 0.0,
             'vms_placed': 0,
-            'queue_length': 0
+            'queue_length': 0,
+            # Capacity tracking (NEW)
+            'max_vms': 120,  # Each DC has 120 servers
+            'current_load': 0  # Current VMs placed
         }
 
     def reset(self, seed: Optional[int] = None) -> Tuple[np.ndarray, Dict]:
@@ -185,6 +215,11 @@ class CMORLEnvironment(gym.Env):
         # Create 5 heterogeneous datacenters (same as ECMR)
         for dc_id, dc_info in DATACENTERS.items():
             self.app.createHeterogeneousDatacenter(dc_id, 40, dc_info['pue'])
+
+        # NOTE: Seeding disabled for C-MORL to allow agent to learn from clean slate
+        # For ECMR baseline, seeding provides realistic multi-DC distribution
+        # For C-MORL, seeding interferes with learning by pre-filling datacenters
+        # self._seed_initial_vms(seed_count_per_dc=10)  # DISABLED
 
         # Reset episode state
         self.current_hour = 0
@@ -243,30 +278,68 @@ class CMORLEnvironment(gym.Env):
             raise ValueError("No VM to place. Call reset() first.")
 
         # Map action to datacenter ID
-        selected_dc = self.datacenter_ids[action]
+        primary_dc = self.datacenter_ids[action]
 
         # Submit VM to CloudSim (same as ECMR: self.app.submitVMByType)
         vm_type = self.current_vm['type']
         vm_id = self.current_vm['id']
 
-        success = self.app.submitVMByType(vm_id, vm_type, selected_dc)
+        # Try primary datacenter first
+        success = False
+        selected_dc = primary_dc
+        used_fallback = False
+
+        # Check if primary DC is at capacity before trying
+        if self.datacenter_states[primary_dc]['current_load'] < self.datacenter_states[primary_dc]['max_vms']:
+            success = self.app.submitVMByType(vm_id, vm_type, primary_dc)
+
+        # If primary fails, try fallback datacenters (smart fallback)
+        if not success:
+            logger.warning(f"Primary DC {primary_dc} full/failed for VM {vm_id}, trying fallback...")
+            used_fallback = True
+
+            # Try other DCs in order, skipping full ones
+            for i in range(self.num_datacenters):
+                if i == action:  # Skip primary (already tried)
+                    continue
+
+                fallback_dc = self.datacenter_ids[i]
+
+                # Skip if at capacity
+                if self.datacenter_states[fallback_dc]['current_load'] >= self.datacenter_states[fallback_dc]['max_vms']:
+                    continue
+
+                success = self.app.submitVMByType(vm_id, vm_type, fallback_dc)
+                if success:
+                    selected_dc = fallback_dc
+                    logger.info(f"VM {vm_id} placed at fallback DC {fallback_dc}")
+                    break
 
         if success:
-            # Track placement
-            self.episode_placements.append({
+            # Track placement (matching ECMR format)
+            dc_state = self.datacenter_states[selected_dc]
+            placement_info = {
                 'vm_id': vm_id,
                 'datacenter': selected_dc,
                 'hour': self.current_hour,
-                'type': vm_type,
-                'carbon_intensity': self.datacenter_states[selected_dc]['carbon_intensity'],
-                'renewable_pct': self.datacenter_states[selected_dc]['renewable_pct']
-            })
+                'vm_type': vm_type,  # Changed 'type' to 'vm_type' to match ECMR
+                'carbon_intensity': dc_state['carbon_intensity'],
+                'renewable_pct': dc_state['renewable_pct'],
+                'dc_type': dc_state.get('dc_type', 'DG'),  # Add datacenter type
+                'pue': DATACENTERS[selected_dc]['pue'],
+                'user_city': self.current_vm.get('user_city', 'Unknown'),
+                'user_lat': self.current_vm.get('user_lat', 0.0),
+                'user_lon': self.current_vm.get('user_lon', 0.0),
+                'used_fallback': used_fallback
+            }
+            self.episode_placements.append(placement_info)
 
             # Update datacenter state
             self.datacenter_states[selected_dc]['vms_placed'] += 1
+            self.datacenter_states[selected_dc]['current_load'] += 1
         else:
             self.episode_failures += 1
-            logger.warning(f"Failed to place VM {vm_id} at {selected_dc}")
+            logger.error(f"Failed to place VM {vm_id} - ALL datacenters at capacity!")
 
         # Calculate immediate reward
         reward = self._calculate_reward(success, selected_dc)
@@ -342,6 +415,10 @@ class CMORLEnvironment(gym.Env):
             'total_placements': len(self.episode_placements)
         }
 
+        # Add placement decision info if successful
+        if success:
+            info['placement_decision'] = placement_info
+
         return next_state, reward, done, False, info
 
     def _calculate_reward(self, success: bool, selected_dc: str) -> Dict[str, float]:
@@ -382,16 +459,17 @@ class CMORLEnvironment(gym.Env):
 
     def _get_state(self) -> np.ndarray:
         """
-        Build 132-dimensional state vector (127 + 5 DC type indicators)
+        Build 137-dimensional state vector (127 + 5 DC type + 5 DC capacity)
 
         State composition:
             [0:4]     VM requirements
             [4:44]    Per-datacenter metrics (5 × 8)
             [44:49]   DC type indicators (5 × 1 binary)
-            [49:79]   Renewable forecasts (5 × 3 × 2)
-            [79:132]  Historical performance (53)
+            [49:54]   DC capacity utilization (5 × 1 float) **NEW**
+            [54:84]   Renewable forecasts (5 × 3 × 2)
+            [84:137]  Historical performance (53)
         """
-        state = np.zeros(132, dtype=np.float32)
+        state = np.zeros(137, dtype=np.float32)
         idx = 0
 
         # 1. Current VM requirements (4 dimensions)
@@ -441,6 +519,14 @@ class CMORLEnvironment(gym.Env):
             # 1.0 if Green (DG), 0.0 if Brown (DB)
             dc_type_binary = 1.0 if dc_state['dc_type'] == 'DG' else 0.0
             state[idx] = dc_type_binary
+            idx += 1
+
+        # 2.6. Datacenter capacity utilization (5 dimensions: 1 per DC, 0.0-1.0) **NEW**
+        for dc_id in self.datacenter_ids:
+            dc_state = self.datacenter_states[dc_id]
+            # Capacity utilization: current_load / max_vms
+            capacity_util = dc_state['current_load'] / max(1, dc_state['max_vms'])
+            state[idx] = capacity_util
             idx += 1
 
         # 3. Renewable energy forecasts (30 dimensions: 5 DCs × 3 sources × 2 horizons)
@@ -505,7 +591,7 @@ class CMORLEnvironment(gym.Env):
               for dc_id in self.datacenter_ids],
 
             # VM type distribution so far (4)
-            *[sum(1 for p in self.episode_placements if p['type'] == vm_type) / max(1, len(self.episode_placements) or 1)
+            *[sum(1 for p in self.episode_placements if p['vm_type'] == vm_type) / max(1, len(self.episode_placements) or 1)
               for vm_type in VM_TYPES],
 
             # Success rate per datacenter (5)

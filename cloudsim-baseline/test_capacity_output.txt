@@ -1,0 +1,751 @@
+==================================================
+TESTING CAPACITY-AWARE C-MORL (STATE_DIM=137)
+==================================================
+Configuration:
+  State dimensions: 137 (127 + 5 DC type + 5 DC capacity)
+  Hours: 2
+  VMs per hour: 5
+  Total VMs per episode: 10
+  Timesteps per policy: 1000
+  Output: test_capacity_137
+
+Starting C-MORL training...
+INFO:__main__:================================================================================
+INFO:__main__:C-MORL TRAINING
+INFO:__main__:================================================================================
+INFO:__main__:Configuration:
+INFO:__main__:  Output dir: test_capacity_137
+INFO:__main__:  Episode: 2 hours × 5 VMs/hour
+INFO:__main__:  Stage 1: 1 policies × 1000 timesteps
+INFO:__main__:  Stage 2: 0 extensions
+INFO:__main__:  Random seed: 42
+INFO:__main__:Initialized C-MORL Trainer
+INFO:__main__:Output directory: test_capacity_137
+INFO:__main__:================================================================================
+INFO:__main__:STAGE 1: PARETO INITIALIZATION
+INFO:__main__:================================================================================
+INFO:__main__:Training 1 policies with 1000 timesteps each
+INFO:pareto_utils:Sampled 1 preference vectors:
+INFO:pareto_utils:  Preference 1: [0.09784297 0.62761396 0.27454307]
+INFO:__main__:
+--- Training Policy 1/1 ---
+INFO:__main__:Preference: [0.09784297 0.62761396 0.27454307]
+INFO:cmorl_environment:Loading carbon data from output/synchronized_dataset_2024.csv
+INFO:cmorl_environment:Loaded 8784 hourly records
+INFO:cmorl_environment:Connecting to CloudSim gateway...
+INFO:cmorl_environment:Connected to CloudSim
+INFO:cmorl_environment:C-MORL Environment initialized
+INFO:cmorl_agent:Initialized C-MORL agent with preference [0.09784297 0.62761396 0.27454307]
+INFO:__main__:Training policy with preference [0.09784296 0.62761396 0.27454308]
+INFO:__main__:Target timesteps: 1000
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=357.212 gCO2, Latency=13.666 ms
+INFO:cmorl_agent:Saved agent to test_capacity_137/stage1/policy_1.pt
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=809.068 gCO2, Latency=14.725 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=562.473 gCO2, Latency=14.906 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 10, Timesteps 100/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.3391
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=225.080 gCO2, Latency=14.570 ms
+INFO:cmorl_agent:Saved agent to test_capacity_137/stage1/policy_1.pt
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.676 kWh, Carbon=584.864 gCO2, Latency=16.020 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 20, Timesteps 200/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.2255
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=676.489 gCO2, Latency=15.629 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 30, Timesteps 300/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.0626
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=349.633 gCO2, Latency=15.816 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 40, Timesteps 400/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.0329
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=1.658 kWh, Carbon=64.521 gCO2, Latency=17.227 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=342.328 gCO2, Latency=11.377 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 50, Timesteps 500/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.1890
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=232.409 gCO2, Latency=13.395 ms
+INFO:__main__:Episode 60, Timesteps 600/1000
+INFO:__main__:  Return: E=-1.698, C=0.004, L=-2.679
+INFO:__main__:  Metrics: Energy=6.67 kWh, Carbon=232.41 gCO2
+INFO:__main__:  Loss: Policy=-0.0606, Value=0.0704
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.676 kWh, Carbon=500.097 gCO2, Latency=14.283 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=499.973 gCO2, Latency=14.283 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 70, Timesteps 700/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.0256
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=433.576 gCO2, Latency=18.550 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 80, Timesteps 800/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=-0.0000, Value=0.0072
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.674 kWh, Carbon=282.473 gCO2, Latency=18.340 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 90, Timesteps 900/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=-0.0000, Value=0.0020
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.675 kWh, Carbon=242.275 gCO2, Latency=18.831 ms
+INFO:cmorl_agent:Saved agent to test_capacity_137/stage1/policy_1.pt
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=6.675 kWh, Carbon=585.225 gCO2, Latency=16.020 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:__main__:Episode 100, Timesteps 1000/1000
+INFO:__main__:  Return: E=-0.701, C=-1.873, L=-3.106
+INFO:__main__:  Metrics: Energy=0.55 kWh, Carbon=51.83 gCO2
+INFO:__main__:  Loss: Policy=0.0000, Value=0.0279
+INFO:__main__:Training complete: 1000 timesteps, 100 episodes
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=51.835 gCO2, Latency=15.529 ms
+INFO:cmorl_environment:Environment closed
+INFO:__main__:✓ Stage 1 complete
+INFO:__main__:================================================================================
+INFO:__main__:STAGE 2: PARETO EXTENSION
+INFO:__main__:================================================================================
+INFO:__main__:Selecting 0 sparse solutions for extension
+INFO:pareto_utils:Selected 0 sparse solutions with crowding distances: []
+INFO:__main__:✓ Stage 2 complete
+INFO:__main__:Saved final results to test_capacity_137/final_results.json
+INFO:__main__:================================================================================
+INFO:__main__:EVALUATING PARETO FRONT SOLUTIONS
+INFO:__main__:================================================================================
+INFO:__main__:Evaluating 1 Pareto solutions with detailed CloudSim results...
+INFO:__main__:Evaluating policy: test_capacity_137/stage1/policy_1.pt
+INFO:cmorl_environment:Loading carbon data from output/synchronized_dataset_2024.csv
+INFO:cmorl_environment:Loaded 8784 hourly records
+INFO:cmorl_environment:Connecting to CloudSim gateway...
+INFO:cmorl_environment:Connected to CloudSim
+INFO:cmorl_environment:C-MORL Environment initialized
+INFO:cmorl_agent:Initialized C-MORL agent with preference [0.09784297 0.62761396 0.27454307]
+INFO:cmorl_environment:=== RESET: Starting new episode (seed=42) ===
+INFO:cmorl_environment:Generated 10 VMs for 2-hour episode
+INFO:cmorl_environment:Episode reset complete: 10 VMs queued
+INFO:cmorl_environment:Episode complete. Running CloudSim simulation...
+INFO:cmorl_environment:Episode results: Energy=0.554 kWh, Carbon=18.636 gCO2, Latency=20.435 ms
+INFO:cmorl_environment:Environment closed
+INFO:__main__:================================================================================
+INFO:__main__:✓ C-MORL TRAINING & EVALUATION COMPLETE
+INFO:__main__:================================================================================
+
+================================================================================
+PARETO FRONT SUMMARY
+================================================================================
+Number of solutions: 1
+
+Objective ranges:
+  Energy:  [0.554, 0.554]
+  Carbon:  [51.835, 51.835]
+  Latency: [15.529, 15.529]
+
+Crowding distance: All solutions have infinite distance (boundary solutions)
+Hypervolume: 0.223
+Expected utility: -23.394
+================================================================================
+
+
+================================================================================
+PARETO FRONT SUMMARY
+================================================================================
+Number of solutions: 1
+
+Objective ranges:
+  Energy:  [0.554, 0.554]
+  Carbon:  [51.835, 51.835]
+  Latency: [15.529, 15.529]
+
+Crowding distance: All solutions have infinite distance (boundary solutions)
+Hypervolume: 0.223
+Expected utility: -22.360
+================================================================================
+
+
+================================================================================
+C-MORL SOLUTION #1 RESULTS
+Preference: Energy=0.10, Carbon=0.63, Latency=0.27
+================================================================================
+
+ OVERALL STATISTICS
+--------------------------------------------------------------------------------
+  Total IT Energy: 0.4691 kWh
+  Total Facility Energy (PUE-adjusted): 0.5536 kWh
+  Average PUE: 1.18
+  Total VMs Requested: 10
+  Successful VMs: 10
+  Failed VMs: 0
+  Success Rate: 100.0%
+
+ CARBON & RENEWABLE METRICS
+--------------------------------------------------------------------------------
+  Total Carbon Emissions: 0.0417 kg CO2
+  Weighted Avg Carbon Intensity: 34.0 gCO2/kWh
+  Weighted Avg Renewable %: 65.0%
+  VM Carbon Intensity: avg=33.7, min=33.3, max=34.0 gCO2/kWh
+
+🌱 M5: GREEN DATACENTER UTILIZATION
+--------------------------------------------------------------------------------
+  Green Datacenter (DG) VMs: 10 (100.00%)
+  Brown Datacenter (DB) VMs: 0 (0.00%)
+  ➜ Green DC Utilization Score: 1.000/1.000
+  Green: ██████████████████████████████████████████████████
+  Brown: 
+
+ PER-DATACENTER STATISTICS
+--------------------------------------------------------------------------------
+  DC_MADRID (Madrid DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.0938 kWh | Total (PUE 1.25): 0.1173 kWh
+    Carbon: 94 gCO2/kWh | Emissions: 0.0110 kg CO2
+    Renewable: 42.3% (Hydro: 4064.0 MW, Solar: 28.0 MW, Wind: 5608.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_AMSTERDAM (Amsterdam DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.0938 kWh | Total (PUE 1.2): 0.1126 kWh
+    Carbon: 0 gCO2/kWh | Emissions: 0.0000 kg CO2
+    Renewable: 0.0% (Hydro: 0.0 MW, Solar: 0.0 MW, Wind: 0.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_PARIS (Paris DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.0938 kWh | Total (PUE 1.15): 0.1079 kWh
+    Carbon: 15 gCO2/kWh | Emissions: 0.0017 kg CO2
+    Renewable: 34.7% (Hydro: 7608.0 MW, Solar: 0.0 MW, Wind: 14367.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_MILAN (Milan DC):
+    VMs: 0 (0.0% of total)
+    IT Energy: 0.0938 kWh | Total (PUE 1.2): 0.1126 kWh
+    Carbon: 227 gCO2/kWh | Emissions: 0.0256 kg CO2
+    Renewable: 45.0% (Hydro: 2592.0 MW, Solar: 0.0 MW, Wind: 4041.0 MW)
+    Utilization: CPU 0.0%, RAM 0.0%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+  DC_STOCKHOLM (Stockholm DC):
+    VMs: 10 (100.0% of total)
+    IT Energy: 0.0938 kWh | Total (PUE 1.1): 0.1032 kWh
+    Carbon: 34 gCO2/kWh | Emissions: 0.0035 kg CO2
+    Renewable: 65.0% (Hydro: 5249.0 MW, Solar: 0.0 MW, Wind: 4571.0 MW)
+    Utilization: CPU 29.6%, RAM 32.1%
+    Server Mix: RH2285: 40, RH2288: 40, SR655: 40
+
+ VM TYPE DISTRIBUTION
+--------------------------------------------------------------------------------
+  small   :    6 ( 60.0%) ██████████████████████████████
+  medium  :    2 ( 20.0%) ██████████
+  large   :    2 ( 20.0%) ██████████
+  xlarge  :    0 (  0.0%) 
+
+ DATACENTER SELECTION DISTRIBUTION
+--------------------------------------------------------------------------------
+  DC_MADRID      :    0 (  0.0%) 
+  DC_AMSTERDAM   :    0 (  0.0%) 
+  DC_PARIS       :    0 (  0.0%) 
+  DC_MILAN       :    0 (  0.0%) 
+  DC_STOCKHOLM   :   10 (100.0%) ██████████████████████████████████████████████████
+
+ C-MORL OBJECTIVES (Learned Trade-offs)
+--------------------------------------------------------------------------------
+  Energy: 0.5536 kWh
+  Carbon: 51.8349 gCO2
+  Latency: 15.5289 ms
+
+================================================================================
+✓ SOLUTION #1 EVALUATION COMPLETE
+================================================================================
+
+
+✓ Test complete
+Check test_capacity_137/ for results

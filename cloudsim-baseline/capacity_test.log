@@ -1,0 +1,22 @@
+==================================================
+SCALABLE ECMR vs C-MORL COMPARISON
+==================================================
+Configuration:
+  Hours: 24
+  VMs per hour: 10
+  Total VMs per episode: 240
+  Timesteps per policy: 20000
+  Output: full_comparison_24h_capacity_final
+
+Checking gateway...
+✓ Gateway is running
+
+==================================================
+Running comparison (this may take 30-60 minutes)...
+==================================================
+Comparison running (PID: 9652)
+Progress log: full_comparison_24h_capacity_final/comparison_output.log
+
+Monitor progress with:
+  tail -f full_comparison_24h_capacity_final/comparison_output.log
+

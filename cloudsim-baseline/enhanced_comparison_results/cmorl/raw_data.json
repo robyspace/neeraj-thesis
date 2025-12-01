@@ -1,0 +1,453 @@
+{
+  "pareto_front_size": 4,
+  "hypervolume": 1989.206933883048,
+  "expected_utility": -2.9176223470308873,
+  "solutions": [
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 1,
+        "preference": [
+          0.09784296501149996,
+          0.6276139633959614,
+          0.27454307159253855
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        0.5535851737777768,
+        0.0,
+        9.298613896967423
+      ],
+      "metadata": {
+        "policy_id": 3,
+        "preference": [
+          0.0200119501874526,
+          0.6726183177105184,
+          0.3073697321020289
+        ],
+        "stage": 1
+      }
+    },
+    {
+      "objectives": [
+        6.676145393333341,
+        245.4952184036537,
+        5.639565983176281
+      ],
+      "metadata": {
+        "policy_id": "extended_1_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 0
+      }
+    },
+    {
+      "objectives": [
+        6.673995066222237,
+        60.226131477589476,
+        6.71944555878697
+      ],
+      "metadata": {
+        "policy_id": "extended_2_Latency",
+        "preference": [
+          0.15,
+          0.15,
+          0.7
+        ],
+        "stage": 2,
+        "base_solution": 1
+      }
+    }
+  ],
+  "solution_details": {
+    "1": {
+      "overall_stats": {
+        "total_it_energy_kwh": 0.4691,
+        "total_facility_energy_kwh": 0.5536,
+        "average_pue": 1.18,
+        "total_vms": 10,
+        "successful_vms": 10,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 0.0417,
+        "total_carbon_gco2": 41.7,
+        "avg_carbon_intensity": 34.0,
+        "avg_renewable_pct": 65.0
+      },
+      "green_dc_util": {
+        "green_dc_vms": 10,
+        "green_pct": 100.0,
+        "brown_dc_vms": 0,
+        "brown_pct": 0.0,
+        "total_vms": 10,
+        "green_dc_score": 1.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_PARIS": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1079,
+          "pue": 1.15,
+          "carbon_intensity": 15.0,
+          "carbon_emissions_kg": 0.0017,
+          "renewable_pct": 34.7,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 227.0,
+          "carbon_emissions_kg": 0.0256,
+          "renewable_pct": 45.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 10,
+          "vm_percentage": 100.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1032,
+          "pue": 1.1,
+          "carbon_intensity": 34.0,
+          "carbon_emissions_kg": 0.0035,
+          "renewable_pct": 65.0,
+          "cpu_utilization": 29.6,
+          "ram_utilization": 32.1
+        }
+      },
+      "dc_selection": {
+        "DC_STOCKHOLM": {
+          "vms": 10,
+          "percentage": 100.0
+        }
+      },
+      "vm_distribution": {
+        "small": 6,
+        "medium": 2,
+        "large": 2,
+        "xlarge": 0
+      },
+      "objectives": {
+        "energy_kwh": 0.5536,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.2986
+      }
+    },
+    "2": {
+      "overall_stats": {
+        "total_it_energy_kwh": 0.4691,
+        "total_facility_energy_kwh": 0.5536,
+        "average_pue": 1.18,
+        "total_vms": 10,
+        "successful_vms": 10,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 0.0417,
+        "total_carbon_gco2": 41.7,
+        "avg_carbon_intensity": 15.4,
+        "avg_renewable_pct": 34.7
+      },
+      "green_dc_util": {
+        "green_dc_vms": 0,
+        "green_pct": 0.0,
+        "brown_dc_vms": 10,
+        "brown_pct": 100.0,
+        "total_vms": 10,
+        "green_dc_score": 0.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_PARIS": {
+          "vms_placed": 10,
+          "vm_percentage": 100.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1079,
+          "pue": 1.15,
+          "carbon_intensity": 15.0,
+          "carbon_emissions_kg": 0.0017,
+          "renewable_pct": 34.7,
+          "cpu_utilization": 29.6,
+          "ram_utilization": 32.1
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 227.0,
+          "carbon_emissions_kg": 0.0256,
+          "renewable_pct": 45.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1032,
+          "pue": 1.1,
+          "carbon_intensity": 34.0,
+          "carbon_emissions_kg": 0.0035,
+          "renewable_pct": 65.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        }
+      },
+      "dc_selection": {
+        "DC_PARIS": {
+          "vms": 10,
+          "percentage": 100.0
+        }
+      },
+      "vm_distribution": {
+        "small": 6,
+        "medium": 2,
+        "large": 2,
+        "xlarge": 0
+      },
+      "objectives": {
+        "energy_kwh": 0.5536,
+        "carbon_gco2": 0.0,
+        "latency_ms": 9.2986
+      }
+    },
+    "3": {
+      "overall_stats": {
+        "total_it_energy_kwh": 0.4691,
+        "total_facility_energy_kwh": 0.5536,
+        "average_pue": 1.18,
+        "total_vms": 10,
+        "successful_vms": 10,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 0.0417,
+        "total_carbon_gco2": 41.7,
+        "avg_carbon_intensity": 34.0,
+        "avg_renewable_pct": 65.0
+      },
+      "green_dc_util": {
+        "green_dc_vms": 10,
+        "green_pct": 100.0,
+        "brown_dc_vms": 0,
+        "brown_pct": 0.0,
+        "total_vms": 10,
+        "green_dc_score": 1.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_PARIS": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1079,
+          "pue": 1.15,
+          "carbon_intensity": 15.0,
+          "carbon_emissions_kg": 0.0017,
+          "renewable_pct": 34.7,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 227.0,
+          "carbon_emissions_kg": 0.0256,
+          "renewable_pct": 45.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 10,
+          "vm_percentage": 100.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1032,
+          "pue": 1.1,
+          "carbon_intensity": 34.0,
+          "carbon_emissions_kg": 0.0035,
+          "renewable_pct": 65.0,
+          "cpu_utilization": 29.6,
+          "ram_utilization": 32.1
+        }
+      },
+      "dc_selection": {
+        "DC_STOCKHOLM": {
+          "vms": 10,
+          "percentage": 100.0
+        }
+      },
+      "vm_distribution": {
+        "small": 6,
+        "medium": 2,
+        "large": 2,
+        "xlarge": 0
+      },
+      "objectives": {
+        "energy_kwh": 6.6761,
+        "carbon_gco2": 245.4952,
+        "latency_ms": 5.6396
+      }
+    },
+    "4": {
+      "overall_stats": {
+        "total_it_energy_kwh": 0.4691,
+        "total_facility_energy_kwh": 0.5536,
+        "average_pue": 1.18,
+        "total_vms": 10,
+        "successful_vms": 10,
+        "failed_vms": 0,
+        "success_rate_pct": 100.0
+      },
+      "carbon_metrics": {
+        "total_carbon_kg": 0.0417,
+        "total_carbon_gco2": 41.7,
+        "avg_carbon_intensity": 15.4,
+        "avg_renewable_pct": 34.7
+      },
+      "green_dc_util": {
+        "green_dc_vms": 0,
+        "green_pct": 0.0,
+        "brown_dc_vms": 10,
+        "brown_pct": 100.0,
+        "total_vms": 10,
+        "green_dc_score": 0.0
+      },
+      "datacenter_stats": {
+        "DC_AMSTERDAM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 0.0,
+          "carbon_emissions_kg": 0.0,
+          "renewable_pct": 0.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_PARIS": {
+          "vms_placed": 10,
+          "vm_percentage": 100.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1079,
+          "pue": 1.15,
+          "carbon_intensity": 15.0,
+          "carbon_emissions_kg": 0.0017,
+          "renewable_pct": 34.7,
+          "cpu_utilization": 29.6,
+          "ram_utilization": 32.1
+        },
+        "DC_MILAN": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1126,
+          "pue": 1.2,
+          "carbon_intensity": 227.0,
+          "carbon_emissions_kg": 0.0256,
+          "renewable_pct": 45.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        },
+        "DC_STOCKHOLM": {
+          "vms_placed": 0,
+          "vm_percentage": 0.0,
+          "it_energy_kwh": 0.0938,
+          "total_energy_kwh": 0.1032,
+          "pue": 1.1,
+          "carbon_intensity": 34.0,
+          "carbon_emissions_kg": 0.0035,
+          "renewable_pct": 65.0,
+          "cpu_utilization": 0.0,
+          "ram_utilization": 0.0
+        }
+      },
+      "dc_selection": {
+        "DC_PARIS": {
+          "vms": 10,
+          "percentage": 100.0
+        }
+      },
+      "vm_distribution": {
+        "small": 6,
+        "medium": 2,
+        "large": 2,
+        "xlarge": 0
+      },
+      "objectives": {
+        "energy_kwh": 6.674,
+        "carbon_gco2": 60.2261,
+        "latency_ms": 6.7194
+      }
+    }
+  },
+  "runtime_seconds": 127.05778098106384,
+  "config": {
+    "hours": 2,
+    "vms_per_hour": 5,
+    "total_vms": 10,
+    "n_policies": 3,
+    "timesteps_per_policy": 10000,
+    "n_extend": 2,
+    "seed": 42
+  }
+}
